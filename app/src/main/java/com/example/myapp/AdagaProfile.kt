@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.databinding.ActivityAdagaProfileBinding
+import com.google.android.gms.ads.AdRequest
 
 class AdagaProfile : AppCompatActivity() {
     private lateinit var binding: ActivityAdagaProfileBinding
@@ -85,6 +86,6 @@ class AdagaProfile : AppCompatActivity() {
             binding.skillleveldetailthree.text =
                 "Terminar um inimigo com Killing Blow redefine sua recarga"
         }
-
+        binding.adView.loadAd(AdRequest.Builder().build())
     }
 }

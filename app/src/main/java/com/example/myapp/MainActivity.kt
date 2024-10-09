@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowInsetsController
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -14,16 +13,12 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
 import com.example.myapp.databinding.ActivityMainBinding
-import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.MobileAds
-import com.google.android.gms.ads.nativead.NativeAd
-import com.google.android.gms.ads.nativead.NativeAdOptions
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.util.Locale
 
 
-@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -35,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         enableEdgeToEdge()
         setContentView(binding.root)
-        MobileAds.initialize(this@MainActivity) {}
+        MobileAds.initialize(this)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -86,7 +81,7 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.layoutinfernos.setOnClickListener {
-            startActivity(Intent(this, TestAdmob::class.java))
+            startActivity(Intent(this, infernosProfile::class.java))
         }
         binding.layoutadaga.setOnClickListener {
             startActivity(Intent(this, AdagaProfile::class.java))
@@ -180,7 +175,6 @@ class MainActivity : AppCompatActivity() {
 
         fun hideSystemUI() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                // Android 11 (API 30) e acima
                 window.setDecorFitsSystemWindows(false)
                 window.insetsController?.let {
                     it.hide(WindowInsets.Type.statusBars() or WindowInsets.Type.navigationBars())
@@ -201,28 +195,12 @@ class MainActivity : AppCompatActivity() {
         }
         hideSystemUI()
 
-        // Configurar o AdLoader
-        val adLoader = AdLoader.Builder(this, "ca-app-pub-2104181702379477/5914780111")
-            .forNativeAd { nativeAd: NativeAd ->
+        binding.adView.loadAd(AdRequest.Builder().build())
+        binding.adViewone.loadAd(AdRequest.Builder().build())
+        binding.adViewtwo.loadAd(AdRequest.Builder().build())
+        binding.adViewthree.loadAd(AdRequest.Builder().build())
+        binding.adViewfor.loadAd(AdRequest.Builder().build())
 
-                populateNativeAdView(nativeAd)
-            }
-            .withAdListener(object : com.google.android.gms.ads.AdListener() {
-                override fun onAdFailedToLoad(adError: com.google.android.gms.ads.LoadAdError) {
-                    println("Falha ao carregar o anúncio: ${adError.message}")
-                }
-            })
-            .withNativeAdOptions(
-                NativeAdOptions.Builder()
-                    .build()
-            )
-            .build()
-        adLoader.loadAd(AdRequest.Builder().build())
-    }
-
-    private fun populateNativeAdView(nativeAd: NativeAd) {
-        val headlineView = findViewById<TextView>(R.id.admob)
-        headlineView.text = nativeAd.headline
     }
 }
 

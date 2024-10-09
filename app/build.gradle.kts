@@ -33,8 +33,6 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-
-    viewBinding { enable = true }
     buildFeatures {
         viewBinding = true
     }
@@ -49,12 +47,9 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.navigation.fragment.ktx)
-    implementation(libs.androidx.navigation.ui.ktx)
     testImplementation(libs.junit)
-    implementation("com.google.android.material:material:1.9.0")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("com.squareup.picasso:picasso:2.71828")
     implementation("com.google.android.gms:play-services-ads:23.3.0")
 
 }

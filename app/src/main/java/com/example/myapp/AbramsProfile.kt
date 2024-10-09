@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.databinding.ActivityAbramsProfileBinding
+import com.google.android.gms.ads.AdRequest
 
 class AbramsProfile : AppCompatActivity() {
 
@@ -115,6 +116,8 @@ class AbramsProfile : AppCompatActivity() {
 
         }
         hideSystemUI()
+
+        binding.adView.loadAd(AdRequest.Builder().build())
 
     }
 }
