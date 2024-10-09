@@ -29,7 +29,8 @@ class HeraProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Kudzu Bomb"
-            binding.skilldescription.text = "Convocar um pedaço de videiras sufocantes que danos e retarda inimigos em seu raio"
+            binding.skilldescription.text =
+                "Convocar um pedaço de videiras sufocantes que danos e retarda inimigos em seu raio"
             binding.skillrange.text = "1 Cobranças"
             binding.skillduration.text = "8s Recarga Entre Cargas"
             binding.skilltime.text = "32s Recarga"
@@ -44,7 +45,8 @@ class HeraProfile : AppCompatActivity() {
         binding.skille.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Watcher's Covenant"
-            binding.skilldescription.text = "Ganhe bônus e conecte-se automaticamente com um aliado próximo para compartilhá-los. A cura é replicada entre todos os conectados. A conexão requer linha de visão. Pressione [2] para Bloquear um alvo."
+            binding.skilldescription.text =
+                "Ganhe bônus e conecte-se automaticamente com um aliado próximo para compartilhá-los. A cura é replicada entre todos os conectados. A conexão requer linha de visão. Pressione [2] para Bloquear um alvo."
             binding.skillrange.text = "16m Gama "
             binding.skillduration.text = "12s Duração"
             binding.skilltime.text = "37s Recarga "
@@ -58,7 +60,8 @@ class HeraProfile : AppCompatActivity() {
         binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Stone Form"
-            binding.skilldescription.text = "Transforme-se em pedra impermeável e esmagar no chão, impressionante e prejudicial inimigos próximos. Cura você por uma porcentagem de sua saúde máxima. Você tem algum controle de ar antes de cair."
+            binding.skilldescription.text =
+                "Transforme-se em pedra impermeável e esmagar no chão, impressionante e prejudicial inimigos próximos. Cura você por uma porcentagem de sua saúde máxima. Você tem algum controle de ar antes de cair."
             binding.skillrange.text = "6m Raio "
             binding.skillduration.text = "2s Duração"
             binding.skilltime.text = "42s Recarga"
@@ -72,7 +75,8 @@ class HeraProfile : AppCompatActivity() {
         binding.skillx.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Air Drop"
-            binding.skilldescription.text = "Voe com um Aliado ou uma bomba. Largue seu aliado ou bomba para causar um grande explosão isso causa movimento lento. Ivy e ally ganham um escudo de bala quando o voo termina. Enquanto levantado, seu aliado ganha resistência a bala, mas não pode atacar e causa 50% de dano. O Air Drop tem um tempo de lançamento mais rápido ao segmentar um aliado."
+            binding.skilldescription.text =
+                "Voe com um Aliado ou uma bomba. Largue seu aliado ou bomba para causar um grande explosão isso causa movimento lento. Ivy e ally ganham um escudo de bala quando o voo termina. Enquanto levantado, seu aliado ganha resistência a bala, mas não pode atacar e causa 50% de dano. O Air Drop tem um tempo de lançamento mais rápido ao segmentar um aliado."
             binding.skillrange.text = "8m Gama "
             binding.skillduration.text = "17s Duração "
             binding.skilltime.text = "85s Recarga "

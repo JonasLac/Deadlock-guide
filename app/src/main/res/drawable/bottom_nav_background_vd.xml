@@ -10,5 +10,5 @@
         android:dashGap="@dimen/material_emphasis_medium"
         android:color="@color/black" />
 
-    
+
 </shape>

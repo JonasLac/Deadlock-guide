@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -24,7 +23,6 @@
             android:paddingBottom="80dp">
 
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -39,6 +37,7 @@
                     android:layout_height="97dp"
                     android:src="@drawable/icondeadlock" />
             </LinearLayout>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -46,8 +45,8 @@
                 android:textSize="15sp"
                 android:gravity="center"
                 android:fontFamily="@font/abril_fatface"
-                android:textColor="#828282"
-                />
+                android:textColor="#828282" />
+
             <LinearLayout
                 android:id="@+id/buildvdone"
                 android:layout_width="match_parent"
@@ -77,16 +76,19 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdbotascorrida" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdespiritoresilente" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdpunhosvampiricos" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -105,6 +107,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdvigoradicional" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -115,6 +118,7 @@
 
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/buildvdtwo"
                 android:layout_width="match_parent"
@@ -144,16 +148,19 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdampliadorcura" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdarmadurabalistica" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdarmaduraespiritual" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -172,16 +179,19 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdbarreiradecombate" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdbarreiraencantada" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdbarreirareativa" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -189,6 +199,7 @@
                         android:src="@drawable/vdmaldicaoanticura" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -199,22 +210,26 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdredutordemaleficios" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdroubodevdesp" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdvelocidaderesiliente" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdbarreiradivina" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -225,11 +240,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdcuraestelar" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdpingenterstaurador" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -238,8 +255,8 @@
                 </LinearLayout>
 
 
-
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/buildvdthree"
                 android:layout_width="match_parent"
@@ -269,16 +286,19 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdarmadurabalisticaref" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdarmaduraespiritualref" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdatravessadordeveu" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -297,16 +317,19 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdresiliencia" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdvigorsuperior" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdfeixosderesgate" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -314,6 +337,7 @@
                         android:src="@drawable/vdpeledeaco" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -324,6 +348,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdremovedordemale" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -334,6 +359,7 @@
 
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/buildvdfor"
                 android:layout_width="match_parent"
@@ -363,16 +389,19 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdinibidor" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdressureicaoanimica" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdsanguessuga" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -391,11 +420,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdcolosso" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdirrefreavel" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -406,11 +437,7 @@
                 </LinearLayout>
 
 
-
             </LinearLayout>
-
-
-
 
 
         </LinearLayout>

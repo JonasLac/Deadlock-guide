@@ -3,7 +3,7 @@
 
     android:shape="rectangle">
 
-    <corners android:radius="20dp"/> <!-- Aumente ou diminua o valor para ajustar o arredondamento -->
+    <corners android:radius="20dp" /> <!-- Aumente ou diminua o valor para ajustar o arredondamento -->
 
-    <solid android:color="@android:color/transparent"/>
+    <solid android:color="@android:color/transparent" />
 </shape>

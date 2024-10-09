@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+
     <style name="roundimageview" parent="">
 
         <item name="cornerFamily">rounded</item>
@@ -8,5 +8,5 @@
         <item name="color">@android:color/transparent</item>
 
     </style>
-    
+
 </resources>

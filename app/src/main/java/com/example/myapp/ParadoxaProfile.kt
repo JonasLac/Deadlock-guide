@@ -33,7 +33,8 @@ class ParadoxaProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Pulse Grenade"
-            binding.skilldescription.text = "Jogue uma granada que começa a pulsar quando ela pousa. Cada pulso se aplica dano, movimento lento e amplificação de dano de empilhamento paradoxo contra a vítima."
+            binding.skilldescription.text =
+                "Jogue uma granada que começa a pulsar quando ela pousa. Cada pulso se aplica dano, movimento lento e amplificação de dano de empilhamento paradoxo contra a vítima."
             binding.skillrange.text = "7m Raio "
             binding.skillduration.text = "4 Pulsos"
             binding.skilltime.text = "28s Recarga "
@@ -47,7 +48,8 @@ class ParadoxaProfile : AppCompatActivity() {
         binding.skille.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Time Wall "
-            binding.skilldescription.text = "Crie uma parede de distorção do tempo que pára o tempo para todos os inimigos projéteis e balas que o toca. Inimigos que tocam a parede levarão danos como uma porcentagem de sua saúde máxima e ser brevemente retardado."
+            binding.skilldescription.text =
+                "Crie uma parede de distorção do tempo que pára o tempo para todos os inimigos projéteis e balas que o toca. Inimigos que tocam a parede levarão danos como uma porcentagem de sua saúde máxima e ser brevemente retardado."
             binding.skillrange.text = "7s Duração "
             binding.skillduration.text = "8s Recarga Entre Cargas"
             binding.skilltime.text = "37s Recarga "
@@ -56,12 +58,14 @@ class ParadoxaProfile : AppCompatActivity() {
             binding.skilldetailthree.text = "1 Cobranças"
             binding.skillleveldetail.text = "+2m Largura, +1m Altura"
             binding.skillleveldetailtwo.text = "+1 Cobranças"
-            binding.skillleveldetailthree.text = "Inimigos que tocam o Time Wall serão silenciados por 3s"
+            binding.skillleveldetailthree.text =
+                "Inimigos que tocam o Time Wall serão silenciados por 3s"
         }
         binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Kinetic Carbine"
-            binding.skilldescription.text = "Comece a carregar sua arma e ganhe maior velocidade de movimento quando estiver totalmente carregada. Seu próximo tiro vai liberar a energia, lidando dano espiritual e aplicando um tempo parar para o inimigo atingido. O dano causado é uma amplificação do dano da sua arma atual."
+            binding.skilldescription.text =
+                "Comece a carregar sua arma e ganhe maior velocidade de movimento quando estiver totalmente carregada. Seu próximo tiro vai liberar a energia, lidando dano espiritual e aplicando um tempo parar para o inimigo atingido. O dano causado é uma amplificação do dano da sua arma atual."
             binding.skillrange.text = "+85% Amplificador de Dano Máximo"
             binding.skillduration.text = "+25% Amplificador de Dano Mínimo"
             binding.skilltime.text = "30s Recarga"
@@ -75,7 +79,8 @@ class ParadoxaProfile : AppCompatActivity() {
         binding.skillx.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Paradoxical Swap"
-            binding.skilldescription.text = "Disparar um projétil que troca sua posição com o herói inimigo alvo. Enquanto o efeito ocorre, você ganha estilo de vida espiritual e o herói inimigo leva dano ao longo do tempo."
+            binding.skilldescription.text =
+                "Disparar um projétil que troca sua posição com o herói inimigo alvo. Enquanto o efeito ocorre, você ganha estilo de vida espiritual e o herói inimigo leva dano ao longo do tempo."
             binding.skillrange.text = "30m Gama "
             binding.skillduration.text = ""
             binding.skilltime.text = "48s Recarga "

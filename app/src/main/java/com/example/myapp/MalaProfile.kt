@@ -29,9 +29,10 @@ class MalaProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Barrage "
-            binding.skilldescription.text = "Canaliza para começar a lançar projéteis que causar dano e aplicar movimento lento em torno do seu ponto de impacto. Cada projétil pousado em um herói lhe concede um buff de empilhamento que amplifica todo o seu dano.\n" +
-                    "\n" +
-                    "Se você lançá-lo no ar, você vai flutuar e mantenha qualquer impulso horizontal com o qual você começou"
+            binding.skilldescription.text =
+                "Canaliza para começar a lançar projéteis que causar dano e aplicar movimento lento em torno do seu ponto de impacto. Cada projétil pousado em um herói lhe concede um buff de empilhamento que amplifica todo o seu dano.\n" +
+                        "\n" +
+                        "Se você lançá-lo no ar, você vai flutuar e mantenha qualquer impulso horizontal com o qual você começou"
             binding.skillrange.text = "2s Hora de Canalização"
             binding.skillduration.text = "6.5m Raio "
             binding.skilltime.text = "32s Recarga "
@@ -45,7 +46,8 @@ class MalaProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Flying Cloak"
-            binding.skilldescription.text = "Lançar um manto senciente que viaja para a frente e danos inimigos. Você pode pressionar [2] para teletransporte para a sua localização"
+            binding.skilldescription.text =
+                "Lançar um manto senciente que viaja para a frente e danos inimigos. Você pode pressionar [2] para teletransporte para a sua localização"
             binding.skillrange.text = "5m Raio "
             binding.skillduration.text = "3.2s Vida"
             binding.skilltime.text = "32s Recarga "
@@ -54,12 +56,14 @@ class MalaProfile : AppCompatActivity() {
             binding.skilldetailthree.text = ""
             binding.skillleveldetail.text = "15 Recarga "
             binding.skillleveldetailtwo.text = "+80 Danos"
-            binding.skillleveldetailthree.text = "+7 Dano de Arma por 10s após teletransporte com Manto Voador."
+            binding.skillleveldetailthree.text =
+                "+7 Dano de Arma por 10s após teletransporte com Manto Voador."
         }
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Enchanter's Satchel"
-            binding.skilldescription.text = "Fugir na sua mala. Quando a duração terminar, causar dano para inimigos próximos. A duração pode ser terminada cedo, realizando qualquer ação."
+            binding.skilldescription.text =
+                "Fugir na sua mala. Quando a duração terminar, causar dano para inimigos próximos. A duração pode ser terminada cedo, realizando qualquer ação."
             binding.skillrange.text = "12m Raio"
             binding.skillduration.text = ""
             binding.skilltime.text = "17s Recarga"
@@ -73,7 +77,8 @@ class MalaProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Affliction"
-            binding.skilldescription.text = "Aplicar danos ao longo do tempo para todos os inimigos próximos. O dano da aflição não é letal e não aplica procs de itens."
+            binding.skilldescription.text =
+                "Aplicar danos ao longo do tempo para todos os inimigos próximos. O dano da aflição não é letal e não aplica procs de itens."
             binding.skillrange.text = "14m Raio "
             binding.skillduration.text = ""
             binding.skilltime.text = "127 Recarga "

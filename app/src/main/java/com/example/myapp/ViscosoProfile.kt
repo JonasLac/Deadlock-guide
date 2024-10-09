@@ -29,7 +29,8 @@ class ViscosoProfile : AppCompatActivity() {
         binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Puddle Punch "
-            binding.skilldescription.text = "Materializar um punho no mundo que socos unidades na área e enviá-los voando. Inimigos serão dano causado, tenha sua distância de traço reduzida por um breve momento, e tenha sua movimento desacelerado. Isso é considerado como um Luz Melee ataque"
+            binding.skilldescription.text =
+                "Materializar um punho no mundo que socos unidades na área e enviá-los voando. Inimigos serão dano causado, tenha sua distância de traço reduzida por um breve momento, e tenha sua movimento desacelerado. Isso é considerado como um Luz Melee ataque"
             binding.skillrange.text = "60m Gama "
             binding.skillduration.text = "4m Raio "
             binding.skilltime.text = "30s Recarga "
@@ -43,7 +44,8 @@ class ViscosoProfile : AppCompatActivity() {
         binding.skillx.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Goo Ball"
-            binding.skilldescription.text = "Morph em uma grande bola de gosma que causa dano e atordoar inimigos no impacto. A bola concede grandes quantidades de Bala e Espírito resistir, salta de paredes e pode salto duplo."
+            binding.skilldescription.text =
+                "Morph em uma grande bola de gosma que causa dano e atordoar inimigos no impacto. A bola concede grandes quantidades de Bala e Espírito resistir, salta de paredes e pode salto duplo."
             binding.skillrange.text = "10s Duração "
             binding.skillduration.text = "140 Danos"
             binding.skilltime.text = "95s Recarga "
@@ -52,12 +54,14 @@ class ViscosoProfile : AppCompatActivity() {
             binding.skilldetailthree.text = "60% Resistência à bala"
             binding.skillleveldetail.text = "+5s Duração "
             binding.skillleveldetailtwo.text = "+120 Danos"
-            binding.skillleveldetailthree.text = "Pode lançar habilidades e usar itens enquanto rola"
+            binding.skillleveldetailthree.text =
+                "Pode lançar habilidades e usar itens enquanto rola"
         }
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Splatter "
-            binding.skilldescription.text = "Jogue uma bola de gosma que causa dano e deixa poças de gosma atrás que se aplicam movimento lento para inimigos no raio"
+            binding.skilldescription.text =
+                "Jogue uma bola de gosma que causa dano e deixa poças de gosma atrás que se aplicam movimento lento para inimigos no raio"
             binding.skillrange.text = "5m Raio "
             binding.skillduration.text = "100 Danos"
             binding.skilltime.text = "21 Recarga "
@@ -71,15 +75,17 @@ class ViscosoProfile : AppCompatActivity() {
         binding.skille.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "The Cube "
-            binding.skilldescription.text = "Envolva o alvo em um cubo de gosma restauradora que protege contra danos e aumenta a regeneração da saúde.\n" +
-                    "O alvo é não é possível tomar novas ações enquanto cubado. Pode ser usado em si mesmo. Imprensa [ESPAÇO] para fugir cedo."
+            binding.skilldescription.text =
+                "Envolva o alvo em um cubo de gosma restauradora que protege contra danos e aumenta a regeneração da saúde.\n" +
+                        "O alvo é não é possível tomar novas ações enquanto cubado. Pode ser usado em si mesmo. Imprensa [ESPAÇO] para fugir cedo."
             binding.skillrange.text = "30m Gama "
             binding.skillduration.text = ""
             binding.skilltime.text = "48s Recarga "
             binding.skilldetailone.text = "+40 Regen Saúde"
             binding.skilldetailtwo.text = ""
             binding.skilldetailthree.text = "4s Duração "
-            binding.skillleveldetail.text = "Aumenta a Velocidade de Movimento e Recuperação de Resistência"
+            binding.skillleveldetail.text =
+                "Aumenta a Velocidade de Movimento e Recuperação de Resistência"
             binding.skillleveldetailtwo.text = "Remove todos os Debuffs e -21s Recarga "
             binding.skillleveldetailthree.text = "+60 Regen Saúde"
         }

@@ -33,7 +33,8 @@ class ChicoProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Ground Strike"
-            binding.skilldescription.text = "Pise o chão abaixo de você danificar inimigos na sua frente. Se você executar Ground Strike enquanto estiver no ar, você rapidamente mergulha em direção ao chão. O dano cresce mais lentamente após 25m"
+            binding.skilldescription.text =
+                "Pise o chão abaixo de você danificar inimigos na sua frente. Se você executar Ground Strike enquanto estiver no ar, você rapidamente mergulha em direção ao chão. O dano cresce mais lentamente após 25m"
             binding.skillrange.text = "11m Raio"
             binding.skillduration.text = "Na"
             binding.skilltime.text = "19s Recarga"
@@ -41,13 +42,15 @@ class ChicoProfile : AppCompatActivity() {
             binding.skilldetailtwo.text = "Na"
             binding.skilldetailthree.text = "6 Dano Por Medidor"
             binding.skillleveldetail.text = "- 10s Recarga"
-            binding.skillleveldetailtwo.text = "Os inimigos atingidos são lançados no ar e desacelerados em 50% por 3s"
+            binding.skillleveldetailtwo.text =
+                "Os inimigos atingidos são lançados no ar e desacelerados em 50% por 3s"
             binding.skillleveldetailthree.text = "Dano por Medidor +110% e melhor dimensionamento"
         }
         binding.skille.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Grapple "
-            binding.skilldescription.text = "Puxe-se pelo ar em direção a um alvo. Usando Grapple também restaura uma carga de resistência e tudo saltos de ar e traços"
+            binding.skilldescription.text =
+                "Puxe-se pelo ar em direção a um alvo. Usando Grapple também restaura uma carga de resistência e tudo saltos de ar e traços"
             binding.skillrange.text = "1 Carga"
             binding.skillduration.text = "2s Recarga Entre Cargas"
             binding.skilltime.text = "42s Recarga"
@@ -61,7 +64,8 @@ class ChicoProfile : AppCompatActivity() {
         binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Flog"
-            binding.skilldescription.text = "Ataca os inimigos com o teu chicote roubar a vida deles"
+            binding.skilldescription.text =
+                "Ataca os inimigos com o teu chicote roubar a vida deles"
             binding.skillrange.text = "25m Gama"
             binding.skillduration.text = "80% Cura vs heróis"
             binding.skilltime.text = "26s Recarga"
@@ -75,7 +79,8 @@ class ChicoProfile : AppCompatActivity() {
         binding.skillx.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Death Slam"
-            binding.skilldescription.text = "Concentre-se nos inimigos para conectar chicotes a eles. Após a canalização, os inimigos conectados são levantado e atordoado então bateu no chão. Suas vítimas e quaisquer inimigos na zona de pouso serão danificado e retardado."
+            binding.skilldescription.text =
+                "Concentre-se nos inimigos para conectar chicotes a eles. Após a canalização, os inimigos conectados são levantado e atordoado então bateu no chão. Suas vítimas e quaisquer inimigos na zona de pouso serão danificado e retardado."
             binding.skillrange.text = "2s Hora de Canalização"
             binding.skillduration.text = "18m Raio"
             binding.skilltime.text = "138s Recarga"

@@ -21,7 +21,10 @@ class TestAdmob : AppCompatActivity() {
         MobileAds.initialize(this)
 
         // Configurar o AdLoader
-        val adLoader = AdLoader.Builder(this, "ca-app-pub-2104181702379477/3804519887") // ID de anúncio de teste
+        val adLoader = AdLoader.Builder(
+            this,
+            "ca-app-pub-2104181702379477/3804519887"
+        ) // ID de anúncio de teste
             .forNativeAd { nativeAd: NativeAd ->
                 // Chamar o método para popular o layout com os dados do anúncio
                 populateNativeAdView(nativeAd)

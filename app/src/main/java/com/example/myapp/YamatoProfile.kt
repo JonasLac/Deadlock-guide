@@ -29,7 +29,8 @@ class YamatoProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Power Slash"
-            binding.skilldescription.text = "Canal para aumentar o dano ao longo de 1,5 segundos, em seguida, solte um ataque de espada totalmente carregado. Pressione [1] ou [clique com o botão esquerdo] para acionar o ataque mais cedo, causando dano parcial."
+            binding.skilldescription.text =
+                "Canal para aumentar o dano ao longo de 1,5 segundos, em seguida, solte um ataque de espada totalmente carregado. Pressione [1] ou [clique com o botão esquerdo] para acionar o ataque mais cedo, causando dano parcial."
             binding.skillrange.text = "recarga de 8.5s"
             binding.skillduration.text = "160 Dano de Carga Total"
             binding.skilltime.text = "comprimento da barra de 25M"
@@ -43,7 +44,8 @@ class YamatoProfile : AppCompatActivity() {
         binding.skille.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Flying Strike"
-            binding.skilldescription.text = "Jogue um gancho para enrole-se em direção a um inimigo, danificando e retardando o alvo quando você chegar."
+            binding.skilldescription.text =
+                "Jogue um gancho para enrole-se em direção a um inimigo, danificando e retardando o alvo quando você chegar."
             binding.skillrange.text = "20m Faixa"
             binding.skillduration.text = ""
             binding.skilltime.text = "recarga de 21s"
@@ -57,7 +59,8 @@ class YamatoProfile : AppCompatActivity() {
         binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Crimson Slash"
-            binding.skilldescription.text = "Corte inimigos na sua frente, danificando-os e diminuindo sua taxa de incêndio. Se algum herói inimigo for atingido, você heal."
+            binding.skilldescription.text =
+                "Corte inimigos na sua frente, danificando-os e diminuindo sua taxa de incêndio. Se algum herói inimigo for atingido, você heal."
             binding.skillrange.text = "alcance de 13m"
             binding.skillduration.text = "20% Taxa de Fogo Lenta"
             binding.skilltime.text = "CD 11.5s"
@@ -71,7 +74,8 @@ class YamatoProfile : AppCompatActivity() {
         binding.skillx.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Shadow Transformation"
-            binding.skilldescription.text = "Torne-se infundido com a alma da sombra de Yamato. Depois de uma inicial invencível transformação, sua as habilidades são atualizadas e são 60% mais rápidas e você ganha o dano resiste e imunidade a efeitos negativos de status. Você não pode morrer neste modo."
+            binding.skilldescription.text =
+                "Torne-se infundido com a alma da sombra de Yamato. Depois de uma inicial invencível transformação, sua as habilidades são atualizadas e são 60% mais rápidas e você ganha o dano resiste e imunidade a efeitos negativos de status. Você não pode morrer neste modo."
             binding.skillrange.text = "2s Tempo de Elenco"
             binding.skillduration.text = "recarga de 106s"
             binding.skilltime.text = "4s Duração"

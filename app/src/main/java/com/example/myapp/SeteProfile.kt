@@ -29,7 +29,8 @@ class SeteProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Lightning Ball"
-            binding.skilldescription.text = "Atire em uma bola de relâmpago que viaja em linha reta. Faz dano a todos os alvos em seu raio. Desacelera ao danificar inimigos e pára se atingir o mundo."
+            binding.skilldescription.text =
+                "Atire em uma bola de relâmpago que viaja em linha reta. Faz dano a todos os alvos em seu raio. Desacelera ao danificar inimigos e pára se atingir o mundo."
             binding.skillrange.text = "1 Cobranças "
             binding.skillduration.text = "8s Recarga Entre Cargas"
             binding.skilltime.text = "23s Recarga"
@@ -43,7 +44,8 @@ class SeteProfile : AppCompatActivity() {
         binding.skille.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Static Charge "
-            binding.skilldescription.text = "Aplique uma carga a um herói inimigo alvo. Após uma curta duração, a carga estática atordoamentos e danos inimigos dentro do raio."
+            binding.skilldescription.text =
+                "Aplique uma carga a um herói inimigo alvo. Após uma curta duração, a carga estática atordoamentos e danos inimigos dentro do raio."
             binding.skillrange.text = "16m Gama "
             binding.skillduration.text = "6m Raio "
             binding.skilltime.text = "42s Recarga "
@@ -57,28 +59,33 @@ class SeteProfile : AppCompatActivity() {
         binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Power Surge"
-            binding.skilldescription.text = "Ligue sua arma com um efeito de choque, fazendo suas balas causam dano de choque no seu alvo. Este dano choque salta para os inimigos perto do seu alvo. Ocorre uma vez por disparo de explosão."
+            binding.skilldescription.text =
+                "Ligue sua arma com um efeito de choque, fazendo suas balas causam dano de choque no seu alvo. Este dano choque salta para os inimigos perto do seu alvo. Ocorre uma vez por disparo de explosão."
             binding.skillrange.text = "10s Duração "
             binding.skillduration.text = "salto de 10m Raio"
             binding.skilltime.text = "48s Recarga "
             binding.skilldetailone.text = "10 Dano de Choque"
             binding.skilldetailtwo.text = "3 Saltos Máximos"
             binding.skilldetailthree.text = ""
-            binding.skillleveldetail.text = "Dano de Choque se aplica - 15% Resistência ao Espírito para 8s"
+            binding.skillleveldetail.text =
+                "Dano de Choque se aplica - 15% Resistência ao Espírito para 8s"
             binding.skillleveldetailtwo.text = "16 Recarga "
-            binding.skillleveldetailthree.text = "+12 Dano de Choque, aumento do Spirit e +3 Max Jumps"
+            binding.skillleveldetailthree.text =
+                "+12 Dano de Choque, aumento do Spirit e +3 Max Jumps"
         }
         binding.skillx.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Storm Cloud"
-            binding.skilldescription.text = "Canalize uma nuvem de tempestade em expansão ao seu redor que danifica todos os inimigos dentro do seu raio. Inimigos não recebem dano quando estão fora da linha de visão. Você aumentou o Bullet Resist durante o canal."
+            binding.skilldescription.text =
+                "Canalize uma nuvem de tempestade em expansão ao seu redor que danifica todos os inimigos dentro do seu raio. Inimigos não recebem dano quando estão fora da linha de visão. Você aumentou o Bullet Resist durante o canal."
             binding.skillrange.text = "7s Hora de Canalização"
             binding.skillduration.text = "25m Raio"
             binding.skilltime.text = "148s Recarga"
             binding.skilldetailone.text = "110 DPS"
             binding.skilldetailtwo.text = "12m Inicial Raio"
             binding.skilldetailthree.text = "+20% Resistência à bala"
-            binding.skillleveldetail.text = "+35% Resistência à bala enquanto canaliza a Storm Cloud"
+            binding.skillleveldetail.text =
+                "+35% Resistência à bala enquanto canaliza a Storm Cloud"
             binding.skillleveldetailtwo.text = "+7s Channel Time e +10m Radius"
             binding.skillleveldetailthree.text = "+75 DPS"
         }

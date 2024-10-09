@@ -37,8 +37,7 @@
             android:text="Precione o icone para voltar"
             android:textSize="15sp"
             android:gravity="center"
-            android:textColor="#828282"
-            />
+            android:textColor="#828282" />
 
         <TextView
             android:layout_width="match_parent"
@@ -48,7 +47,7 @@
             android:gravity="center"
             android:fontFamily="@font/abril_fatface"
             android:textColor="#bcb494"
-            android:text="Todos items de 1250 almas detalhados e com uma explicação de noob"/>
+            android:text="Todos items de 1250 almas detalhados e com uma explicação de noob" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -56,8 +55,7 @@
             android:layout_margin="10sp"
             android:gravity="center"
             android:background="@color/black"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
 
             <LinearLayout
@@ -75,8 +73,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30sp"
                     android:layout_marginBottom="50sp"
-                    android:src="@drawable/adartilhariarapida"/>
-
+                    android:src="@drawable/adartilhariarapida" />
 
 
             </LinearLayout>
@@ -93,7 +90,7 @@
                     android:layout_margin="10sp"
                     android:fontFamily="@font/abril_fatface"
                     android:text="Adicional de balas ao ataque basico"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="110sp"
@@ -102,20 +99,20 @@
                     android:textSize="13sp"
                     android:layout_margin="10sp"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/abril_fatface"/>
+                    android:fontFamily="@font/abril_fatface" />
 
             </LinearLayout>
 
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
             android:gravity="center"
             android:background="@color/black"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
 
             <LinearLayout
@@ -133,8 +130,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30sp"
                     android:layout_marginBottom="50sp"
-                    android:src="@drawable/adavancocinetico"/>
-
+                    android:src="@drawable/adavancocinetico" />
 
 
             </LinearLayout>
@@ -151,7 +147,7 @@
                     android:layout_margin="10sp"
                     android:fontFamily="@font/abril_fatface"
                     android:text="Adicional de balas ao ataque basico"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="110sp"
@@ -160,20 +156,20 @@
                     android:textSize="13sp"
                     android:layout_margin="10sp"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/abril_fatface"/>
+                    android:fontFamily="@font/abril_fatface" />
 
             </LinearLayout>
 
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
             android:gravity="center"
             android:background="@color/black"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
 
             <LinearLayout
@@ -191,8 +187,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30sp"
                     android:layout_marginBottom="50sp"
-                    android:src="@drawable/adbalasdesaceleradoras"/>
-
+                    android:src="@drawable/adbalasdesaceleradoras" />
 
 
             </LinearLayout>
@@ -209,7 +204,7 @@
                     android:layout_margin="10sp"
                     android:fontFamily="@font/abril_fatface"
                     android:text="Adicional de balas ao ataque basico"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="110sp"
@@ -218,20 +213,20 @@
                     android:textSize="13sp"
                     android:layout_margin="10sp"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/abril_fatface"/>
+                    android:fontFamily="@font/abril_fatface" />
 
             </LinearLayout>
 
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
             android:gravity="center"
             android:background="@color/black"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
 
             <LinearLayout
@@ -266,7 +261,7 @@
                     android:layout_margin="10sp"
                     android:fontFamily="@font/abril_fatface"
                     android:text="Adicional de balas ao ataque basico"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="110sp"
@@ -275,20 +270,20 @@
                     android:textSize="13sp"
                     android:layout_margin="10sp"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/abril_fatface"/>
+                    android:fontFamily="@font/abril_fatface" />
 
             </LinearLayout>
 
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
             android:gravity="center"
             android:background="@color/black"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
 
             <LinearLayout
@@ -306,8 +301,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30sp"
                     android:layout_marginBottom="50sp"
-                    android:src="@drawable/adbalasmistica"/>
-
+                    android:src="@drawable/adbalasmistica" />
 
 
             </LinearLayout>
@@ -324,7 +318,7 @@
                     android:layout_margin="10sp"
                     android:fontFamily="@font/abril_fatface"
                     android:text="Adicional de balas ao ataque basico"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="110sp"
@@ -333,20 +327,20 @@
                     android:textSize="13sp"
                     android:layout_margin="10sp"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/abril_fatface"/>
+                    android:fontFamily="@font/abril_fatface" />
 
             </LinearLayout>
 
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
             android:gravity="center"
             android:background="@color/black"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
 
             <LinearLayout
@@ -364,8 +358,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30sp"
                     android:layout_marginBottom="50sp"
-                    android:src="@drawable/adfuria"/>
-
+                    android:src="@drawable/adfuria" />
 
 
             </LinearLayout>
@@ -382,7 +375,7 @@
                     android:layout_margin="10sp"
                     android:fontFamily="@font/abril_fatface"
                     android:text="Adicional de balas ao ataque basico"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="110sp"
@@ -391,20 +384,20 @@
                     android:textSize="13sp"
                     android:layout_margin="10sp"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/abril_fatface"/>
+                    android:fontFamily="@font/abril_fatface" />
 
             </LinearLayout>
 
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
             android:gravity="center"
             android:background="@color/black"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
 
             <LinearLayout
@@ -422,8 +415,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30sp"
                     android:layout_marginBottom="50sp"
-                    android:src="@drawable/adgolpecarregado"/>
-
+                    android:src="@drawable/adgolpecarregado" />
 
 
             </LinearLayout>
@@ -440,7 +432,7 @@
                     android:layout_margin="10sp"
                     android:fontFamily="@font/abril_fatface"
                     android:text="Adicional de balas ao ataque basico"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="110sp"
@@ -449,20 +441,20 @@
                     android:textSize="13sp"
                     android:layout_margin="10sp"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/abril_fatface"/>
+                    android:fontFamily="@font/abril_fatface" />
 
             </LinearLayout>
 
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
             android:gravity="center"
             android:background="@color/black"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
 
             <LinearLayout
@@ -480,8 +472,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30sp"
                     android:layout_marginBottom="50sp"
-                    android:src="@drawable/adlongoalcance"/>
-
+                    android:src="@drawable/adlongoalcance" />
 
 
             </LinearLayout>
@@ -498,7 +489,7 @@
                     android:layout_margin="10sp"
                     android:fontFamily="@font/abril_fatface"
                     android:text="Adicional de balas ao ataque basico"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="110sp"
@@ -507,20 +498,20 @@
                     android:textSize="13sp"
                     android:layout_margin="10sp"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/abril_fatface"/>
+                    android:fontFamily="@font/abril_fatface" />
 
             </LinearLayout>
 
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
             android:gravity="center"
             android:background="@color/black"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
 
             <LinearLayout
@@ -538,8 +529,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30sp"
                     android:layout_marginBottom="50sp"
-                    android:src="@drawable/adrecarregamentoativo"/>
-
+                    android:src="@drawable/adrecarregamentoativo" />
 
 
             </LinearLayout>
@@ -556,7 +546,7 @@
                     android:layout_margin="10sp"
                     android:fontFamily="@font/abril_fatface"
                     android:text="Adicional de balas ao ataque basico"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="110sp"
@@ -565,20 +555,20 @@
                     android:textSize="13sp"
                     android:layout_margin="10sp"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/abril_fatface"/>
+                    android:fontFamily="@font/abril_fatface" />
 
             </LinearLayout>
 
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
             android:gravity="center"
             android:background="@color/black"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
 
             <LinearLayout
@@ -596,8 +586,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30sp"
                     android:layout_marginBottom="50sp"
-                    android:src="@drawable/adpesligeiros"/>
-
+                    android:src="@drawable/adpesligeiros" />
 
 
             </LinearLayout>
@@ -614,7 +603,7 @@
                     android:layout_margin="10sp"
                     android:fontFamily="@font/abril_fatface"
                     android:text="Adicional de balas ao ataque basico"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="110sp"
@@ -623,16 +612,12 @@
                     android:textSize="13sp"
                     android:layout_margin="10sp"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/abril_fatface"/>
+                    android:fontFamily="@font/abril_fatface" />
 
             </LinearLayout>
 
 
         </LinearLayout>
-
-
-
-
 
 
     </LinearLayout>

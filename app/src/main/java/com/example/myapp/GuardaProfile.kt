@@ -29,7 +29,8 @@ class GuardaProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Alchemical Flask"
-            binding.skilldescription.text = "Jogue um frasco que danos, retarda, e reduz o dano arma e resistência de inimigos que atinge."
+            binding.skilldescription.text =
+                "Jogue um frasco que danos, retarda, e reduz o dano arma e resistência de inimigos que atinge."
             binding.skillrange.text = "7m Raio"
             binding.skillduration.text = "CD 14s"
             binding.skilltime.text = "Na"
@@ -38,12 +39,14 @@ class GuardaProfile : AppCompatActivity() {
             binding.skilldetailthree.text = "Na"
             binding.skillleveldetail.text = "+40 Danos"
             binding.skillleveldetailtwo.text = "+1 Redução de Resistência"
-            binding.skillleveldetailthree.text = "-7s Recarga e aplica 35% de Taxa de Incêndio Lenta"
+            binding.skillleveldetailthree.text =
+                "-7s Recarga e aplica 35% de Taxa de Incêndio Lenta"
         }
         binding.skille.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Willpower"
-            binding.skilldescription.text = "Ganhar um escudo espiritual e velocidade de movimento bônus."
+            binding.skilldescription.text =
+                "Ganhar um escudo espiritual e velocidade de movimento bônus."
             binding.skillrange.text = "7s Duração "
             binding.skillduration.text = ""
             binding.skilltime.text = "42s Recarga "
@@ -52,12 +55,14 @@ class GuardaProfile : AppCompatActivity() {
             binding.skilldetailthree.text = "15% Bônus de velocidade de movimento"
             binding.skillleveldetail.text = "+20% Bônus de velocidade de movimento"
             binding.skillleveldetailtwo.text = "- 20s Recarga"
-            binding.skillleveldetailthree.text = "+200 Spirit Shield Saúde e agora escala com Spirit Power"
+            binding.skillleveldetailthree.text =
+                "+200 Spirit Shield Saúde e agora escala com Spirit Power"
         }
         binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Binding Word"
-            binding.skilldescription.text = "Maldição um herói inimigo. Se eles não se afastarem de sua posição inicial dentro do tempo de fuga, eles serão danificado e imobilizado."
+            binding.skilldescription.text =
+                "Maldição um herói inimigo. Se eles não se afastarem de sua posição inicial dentro do tempo de fuga, eles serão danificado e imobilizado."
             binding.skillrange.text = "20m Gama "
             binding.skillduration.text = "37s Recarga "
             binding.skilltime.text = "2.5s Tempo de Fuga"
@@ -66,12 +71,14 @@ class GuardaProfile : AppCompatActivity() {
             binding.skilldetailthree.text = "faixa de fuga de 16M"
             binding.skillleveldetail.text = "+1s Imobilizar Duração"
             binding.skillleveldetailtwo.text = "- 20s Recarga"
-            binding.skillleveldetailthree.text = "Ofertas de diretor +20% mais Dano de Bala para heróis presos por 6s"
+            binding.skillleveldetailthree.text =
+                "Ofertas de diretor +20% mais Dano de Bala para heróis presos por 6s"
         }
         binding.skillx.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Last Stand"
-            binding.skilldescription.text = "Após o carregamento para 2.2s, libera pulsos que danificam inimigos e curam você com base nos danos causados. Ao canalizar Last Stand, você aumentou muito a resistência à bala."
+            binding.skilldescription.text =
+                "Após o carregamento para 2.2s, libera pulsos que danificam inimigos e curam você com base nos danos causados. Ao canalizar Last Stand, você aumentou muito a resistência à bala."
             binding.skillrange.text = "12m Raio"
             binding.skillduration.text = "6s Duração"
             binding.skilltime.text = "138s Recarga"

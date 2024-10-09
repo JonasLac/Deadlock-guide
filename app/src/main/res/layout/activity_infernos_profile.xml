@@ -46,6 +46,7 @@
                 android:layout_weight="1" />
 
         </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,8 +54,8 @@
             android:textSize="15sp"
             android:gravity="center"
             android:fontFamily="@font/abril_fatface"
-            android:textColor="#828282"
-            />
+            android:textColor="#828282" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -67,15 +68,14 @@
                 android:gravity="center"
                 android:layout_margin="10sp"
                 android:fontFamily="@font/abril_fatface"
-                android:textColor="#bcb494"/>
+                android:textColor="#bcb494" />
 
         </LinearLayout>
 
         <ImageView
             android:layout_width="410sp"
             android:layout_height="500sp"
-            android:src="@drawable/splashinfernos"
-            />
+            android:src="@drawable/splashinfernos" />
 
 
         <TextView
@@ -87,7 +87,7 @@
             android:textColor="#bcb494"
             android:textSize="23sp"
             android:text="Selecione uma skill para saber mais"
-            android:id="@+id/selectskill"/>
+            android:id="@+id/selectskill" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -101,25 +101,28 @@
                 android:layout_weight="1"
                 android:layout_width="100sp"
                 android:layout_height="100sp"
-                android:src="@drawable/skillinfernosq"/>
+                android:src="@drawable/skillinfernosq" />
+
             <ImageView
                 android:id="@+id/skille"
                 android:layout_weight="1"
                 android:layout_width="100sp"
                 android:layout_height="100sp"
-                android:src="@drawable/skillinfernose"/>
+                android:src="@drawable/skillinfernose" />
+
             <ImageView
                 android:id="@+id/skillc"
                 android:layout_weight="1"
                 android:layout_width="100sp"
                 android:layout_height="100sp"
-                android:src="@drawable/skillinfernosc"/>
+                android:src="@drawable/skillinfernosc" />
+
             <ImageView
                 android:id="@+id/skillx"
                 android:layout_weight="1"
                 android:layout_width="100sp"
                 android:layout_height="100sp"
-                android:src="@drawable/skillinfernosx"/>
+                android:src="@drawable/skillinfernosx" />
 
         </LinearLayout>
 
@@ -138,7 +141,7 @@
                 android:gravity="center"
                 android:textSize="20sp"
                 android:fontFamily="@font/abril_fatface"
-                android:textColor="#ff1"/>
+                android:textColor="#ff1" />
 
             <TextView
                 android:id="@+id/skilldescription"
@@ -149,7 +152,7 @@
                 android:fontFamily="@font/abril_fatface"
                 android:textSize="20sp"
                 android:layout_margin="20sp"
-                android:gravity="center"/>
+                android:gravity="center" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -174,7 +177,7 @@
                         android:layout_margin="5sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/skilldetailone"
@@ -184,9 +187,10 @@
                         android:layout_margin="5sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
@@ -202,7 +206,7 @@
                         android:layout_margin="5sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/skilldetailtwo"
@@ -212,9 +216,10 @@
                         android:layout_margin="5sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -230,7 +235,7 @@
                         android:layout_margin="5sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/skilldetailthree"
@@ -240,7 +245,7 @@
                         android:layout_margin="5sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                 </LinearLayout>
 
@@ -255,14 +260,13 @@
                 android:fontFamily="@font/abril_fatface"
                 android:textSize="20sp"
                 android:gravity="center"
-                android:textColor="#bcb494"/>
+                android:textColor="#bcb494" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -280,7 +284,7 @@
                         android:layout_margin="5sp"
                         android:text="1 AP"
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/skillleveldetail"
@@ -292,9 +296,10 @@
                         android:layout_margin="5sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -310,7 +315,7 @@
                         android:layout_margin="5sp"
                         android:text="2 AP"
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/skillleveldetailtwo"
@@ -322,9 +327,10 @@
                         android:maxWidth="120sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -340,7 +346,7 @@
                         android:layout_margin="5sp"
                         android:text="3 AP"
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/skillleveldetailthree"
@@ -352,13 +358,12 @@
                         android:maxWidth="120sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                 </LinearLayout>
 
 
             </LinearLayout>
-
 
 
         </LinearLayout>
@@ -376,13 +381,13 @@
                 android:gravity="center"
                 android:textSize="30sp"
                 android:textColor="#bcb494"
-                android:fontFamily="@font/abril_fatface"/>
+                android:fontFamily="@font/abril_fatface" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="250sp"
                 android:layout_margin="10sp"
-                android:src="@drawable/infernosingame"/>
+                android:src="@drawable/infernosingame" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -393,8 +398,7 @@ Seu kit de habilidade se inclina para ser um engager móvel que inflige Burns co
                 android:gravity="center"
                 android:fontFamily="@font/abril_fatface"
                 android:textColor="#bcb494"
-                android:layout_margin="10sp"
-                />
+                android:layout_margin="10sp" />
         </LinearLayout>
 
 

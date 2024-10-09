@@ -29,7 +29,8 @@ class MoKrillProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Scorn "
-            binding.skilldescription.text = "Causa dano para inimigos próximos e cure-se com base nos danos causados. A cura é mais forte contra os heróis inimigos."
+            binding.skilldescription.text =
+                "Causa dano para inimigos próximos e cure-se com base nos danos causados. A cura é mais forte contra os heróis inimigos."
             binding.skillrange.text = "10m Raio "
             binding.skillduration.text = "60 Danos"
             binding.skilltime.text = "12.5s Recarga "
@@ -38,12 +39,14 @@ class MoKrillProfile : AppCompatActivity() {
             binding.skilldetailthree.text = ""
             binding.skillleveldetail.text = "4s Recarga "
             binding.skillleveldetailtwo.text = "+25 Danos"
-            binding.skillleveldetailthree.text = "Adiciona um debuff aos inimigos que permite que Mo & Krill cause +15% de dano a eles. Empilha e dura 16s."
+            binding.skillleveldetailthree.text =
+                "Adiciona um debuff aos inimigos que permite que Mo & Krill cause +15% de dano a eles. Empilha e dura 16s."
         }
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Burrow "
-            binding.skilldescription.text = "Toca subterrânea movendo-se mais rápido, e ganhando armadura de espírito e bala. Dano de heróis inimigos irá reduzir o bônus de velocidade. Quando você saltar para fora, derrubar os inimigos no ar e realizar um ataque de giro que danos e retarda. A recarga começa quando Burrow termina."
+            binding.skilldescription.text =
+                "Toca subterrânea movendo-se mais rápido, e ganhando armadura de espírito e bala. Dano de heróis inimigos irá reduzir o bônus de velocidade. Quando você saltar para fora, derrubar os inimigos no ar e realizar um ataque de giro que danos e retarda. A recarga começa quando Burrow termina."
             binding.skillrange.text = "5s Tempo de Burrow"
             binding.skillduration.text = "5m Raio "
             binding.skilltime.text = "37s Recarga "
@@ -57,7 +60,8 @@ class MoKrillProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Sand Blast"
-            binding.skilldescription.text = "Pulverize areia que desarmar inimigos na frente de você e ofertas dano"
+            binding.skilldescription.text =
+                "Pulverize areia que desarmar inimigos na frente de você e ofertas dano"
             binding.skillrange.text = "35m Gama "
             binding.skillduration.text = "3.5s Duração"
             binding.skilltime.text = "42s Recarga "
@@ -71,7 +75,8 @@ class MoKrillProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Combo "
-            binding.skilldescription.text = "Mantem o alvo no lugar atordoando e causando dano durante o canal."
+            binding.skilldescription.text =
+                "Mantem o alvo no lugar atordoando e causando dano durante o canal."
             binding.skillrange.text = "2.5s Duração "
             binding.skillduration.text = "5m Gama"
             binding.skilltime.text = "95s Recarga "

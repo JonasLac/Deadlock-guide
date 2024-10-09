@@ -23,7 +23,8 @@ class KelvinProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Frost Grenade"
-            binding.skilldescription.text = "Jogue uma granada que exploda em uma nuvem de gelo congelante prejudicial e desaceleração inimigos."
+            binding.skilldescription.text =
+                "Jogue uma granada que exploda em uma nuvem de gelo congelante prejudicial e desaceleração inimigos."
             binding.skillrange.text = "1 Cobranças "
             binding.skillduration.text = "7s Recarga Entre Cargas"
             binding.skilltime.text = "22s Recarga "
@@ -31,14 +32,16 @@ class KelvinProfile : AppCompatActivity() {
             binding.skilldetailtwo.text = "80 Danos"
             binding.skilldetailthree.text = "40% Movimento Lento"
             binding.skillleveldetail.text = "+1 Cobranças "
-            binding.skillleveldetailtwo.text = "Grenada de Gelo agora cura 145 HP para alvos amigáveis. Escalas com Espírito"
+            binding.skillleveldetailtwo.text =
+                "Grenada de Gelo agora cura 145 HP para alvos amigáveis. Escalas com Espírito"
             binding.skillleveldetailthree.text = "+175 Danos"
         }
         binding.skille.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Ice Path"
-            binding.skilldescription.text = "Kelvin cria um trilha flutuante de gelo e neve que dá bônus de movimento para ele e seus aliados. Kelvin ganha 60% de resistência lenta pela duração. Inimigos também podem andar na trilha flutuante.\n" +
-                    "Pressione [LEFT SHIFT] / [LEFT CTRL] para subir ou descer enquanto estiver no Caminho do Gelo."
+            binding.skilldescription.text =
+                "Kelvin cria um trilha flutuante de gelo e neve que dá bônus de movimento para ele e seus aliados. Kelvin ganha 60% de resistência lenta pela duração. Inimigos também podem andar na trilha flutuante.\n" +
+                        "Pressione [LEFT SHIFT] / [LEFT CTRL] para subir ou descer enquanto estiver no Caminho do Gelo."
             binding.skillrange.text = "8s Duração"
             binding.skillduration.text = "18s Duração"
             binding.skilltime.text = "38s Recarga "
@@ -47,12 +50,14 @@ class KelvinProfile : AppCompatActivity() {
             binding.skilldetailthree.text = ""
             binding.skillleveldetail.text = "+4m/s Velocidade de Sprint"
             binding.skillleveldetailtwo.text = "16s Recarga"
-            binding.skillleveldetailthree.text = "Enquanto estiver ativo, ganhe +1 Spirit Power por metro de trilha Ice Path criada. Máximo de 55 Poder Espiritual"
+            binding.skillleveldetailthree.text =
+                "Enquanto estiver ativo, ganhe +1 Spirit Power por metro de trilha Ice Path criada. Máximo de 55 Poder Espiritual"
         }
         binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Arctic Beam"
-            binding.skilldescription.text = "Atire energia fria congelante na sua frente alvos prejudiciais e construindo movimento e taxa de fogo lenta contra eles quanto mais tempo você sustentar o feixe sobre eles. Você reduziu a velocidade de movimento ao usar o Arctic Beam."
+            binding.skilldescription.text =
+                "Atire energia fria congelante na sua frente alvos prejudiciais e construindo movimento e taxa de fogo lenta contra eles quanto mais tempo você sustentar o feixe sobre eles. Você reduziu a velocidade de movimento ao usar o Arctic Beam."
             binding.skillrange.text = "5s Canal Tempo"
             binding.skillduration.text = "comprimento do feixe de 25M"
             binding.skilltime.text = "24s Recarga "
@@ -61,12 +66,14 @@ class KelvinProfile : AppCompatActivity() {
             binding.skilldetailthree.text = "2s Linger Lento"
             binding.skillleveldetail.text = "-8s Recarga "
             binding.skillleveldetailtwo.text = "+40 DPS"
-            binding.skillleveldetailthree.text = "Dispara 2 Feixes Árticos Adicionais em direção a inimigos dentro de 13m do último alvo atingido"
+            binding.skillleveldetailthree.text =
+                "Dispara 2 Feixes Árticos Adicionais em direção a inimigos dentro de 13m do último alvo atingido"
         }
         binding.skillx.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Frozen Shelter"
-            binding.skilldescription.text = "Kelvin congela o ar ao seu redor, criando uma cúpula impenetrável em torno de si mesmo. Enquanto na cúpula, aliados rapidamente regenerar a saúde e os inimigos são desacelerado."
+            binding.skilldescription.text =
+                "Kelvin congela o ar ao seu redor, criando uma cúpula impenetrável em torno de si mesmo. Enquanto na cúpula, aliados rapidamente regenerar a saúde e os inimigos são desacelerado."
             binding.skillrange.text = "10m Raio "
             binding.skillduration.text = "5.5s Duração "
             binding.skilltime.text = "127 Recarga"

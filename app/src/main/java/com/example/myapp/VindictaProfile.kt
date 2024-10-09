@@ -33,7 +33,8 @@ class VindictaProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Stake "
-            binding.skilldescription.text = "Jogue uma estaca que amarra inimigos para o local onde a estaca pousa. O movimento inimigo é restrito ao comprimento da corda."
+            binding.skilldescription.text =
+                "Jogue uma estaca que amarra inimigos para o local onde a estaca pousa. O movimento inimigo é restrito ao comprimento da corda."
             binding.skillrange.text = "2s Tether Duração"
             binding.skillduration.text = "60 Danos"
             binding.skilltime.text = "42s Recarga"
@@ -47,7 +48,8 @@ class VindictaProfile : AppCompatActivity() {
         binding.skille.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Flight "
-            binding.skilldescription.text = "Salte para o ar e voar. Enquanto em voo, sua arma lida dano espiritual bônus."
+            binding.skilldescription.text =
+                "Salte para o ar e voar. Enquanto em voo, sua arma lida dano espiritual bônus."
             binding.skillrange.text = "0.2s Tempo de Elenco"
             binding.skillduration.text = "8s Duração"
             binding.skilltime.text = "42s Recarga "
@@ -61,21 +63,24 @@ class VindictaProfile : AppCompatActivity() {
         binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Crow Familiar "
-            binding.skilldescription.text = "O seu corvo negócios familiares danos de impacto e aplica a sangrar isso causa dano com base no a saúde atual do alvo."
+            binding.skilldescription.text =
+                "O seu corvo negócios familiares danos de impacto e aplica a sangrar isso causa dano com base no a saúde atual do alvo."
             binding.skillrange.text = "40 Danos"
             binding.skillduration.text = "3%/s Dano de Sangramento"
             binding.skilltime.text = "26s Recarga"
             binding.skilldetailone.text = "6% Redução da Resistência à Bala"
             binding.skilldetailtwo.text = ""
             binding.skilldetailthree.text = "duração do Debuff de 6S"
-            binding.skillleveldetail.text = "Corvo Ricochetes até 2 vezes em direção a outros inimigos dentro de 15m"
+            binding.skillleveldetail.text =
+                "Corvo Ricochetes até 2 vezes em direção a outros inimigos dentro de 15m"
             binding.skillleveldetailtwo.text = "17 Recarga "
             binding.skillleveldetailthree.text = "+3% Sangrar e suprimir a cicatrização por -40%"
         }
         binding.skillx.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Assassinate"
-            binding.skilldescription.text = "Use seu rifle com escopo para disparar um tiro poderoso em longas distâncias. Cause apenas dano parcial até que seja totalmente carregado após 1s de escopo. Faz dano bônus aos inimigos com menos de 50% de saúde restante. Aterragem"
+            binding.skilldescription.text =
+                "Use seu rifle com escopo para disparar um tiro poderoso em longas distâncias. Cause apenas dano parcial até que seja totalmente carregado após 1s de escopo. Faz dano bônus aos inimigos com menos de 50% de saúde restante. Aterragem"
             binding.skillrange.text = "2 Cobranças "
             binding.skillduration.text = "1.6s entre cargas"
             binding.skilltime.text = "53s Recarga "

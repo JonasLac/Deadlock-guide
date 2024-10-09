@@ -36,8 +36,7 @@
 
             </LinearLayout>
 
-            <com.google.android.gms.ads.nativead.NativeAdView
-                xmlns:android="http://schemas.android.com/apk/res/android"
+            <com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/admob"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -1381,7 +1380,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="100sp"/>
+                    android:layout_height="100sp" />
 
             </LinearLayout>
 

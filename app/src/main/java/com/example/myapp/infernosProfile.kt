@@ -34,7 +34,8 @@ class infernosProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Catalyst"
-            binding.skilldescription.text = "Spw napalm que retarda o movimento inimigo e amplifica o dano O Infernus faz-lhes isso."
+            binding.skilldescription.text =
+                "Spw napalm que retarda o movimento inimigo e amplifica o dano O Infernus faz-lhes isso."
             binding.skillrange.text = "1 Cobranças "
             binding.skillduration.text = "6s Recarga Entre Cargas "
             binding.skilltime.text = "25s Recarga "
@@ -43,12 +44,14 @@ class infernosProfile : AppCompatActivity() {
             binding.skilldetailthree.text = "40% Movimento Lento"
             binding.skillleveldetail.text = "+1 Encargos"
             binding.skillleveldetailtwo.text = "Infernus ganha 15% de Lifesteal contra vítimas"
-            binding.skillleveldetailthree.text = "+15% Amplificação de Danos e -40% Cura/Regeneração"
+            binding.skillleveldetailthree.text =
+                "+15% Amplificação de Danos e -40% Cura/Regeneração"
         }
         binding.skille.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Flame Dash"
-            binding.skilldescription.text = "Avançar em alta velocidade e deixar uma trilha de chamas que queima inimigos. Segure [LMC] para correr mais rápido."
+            binding.skilldescription.text =
+                "Avançar em alta velocidade e deixar uma trilha de chamas que queima inimigos. Segure [LMC] para correr mais rápido."
             binding.skillrange.text = "20m/s Max Dash Velocidade"
             binding.skillduration.text = "40 DPS"
             binding.skilltime.text = "40s Recarga "
@@ -62,7 +65,8 @@ class infernosProfile : AppCompatActivity() {
         binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Afterburn"
-            binding.skilldescription.text = "Suas balas se acumulam aplique um efeito de queima nos inimigos. As balas e habilidades do Inferno vão refrescar a duração."
+            binding.skilldescription.text =
+                "Suas balas se acumulam aplique um efeito de queima nos inimigos. As balas e habilidades do Inferno vão refrescar a duração."
             binding.skillrange.text = "15 DPS"
             binding.skillduration.text = "3s Queimam Duração "
             binding.skilltime.text = ""
@@ -76,7 +80,8 @@ class infernosProfile : AppCompatActivity() {
         binding.skillx.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Concussive Combustion"
-            binding.skilldescription.text = "Transforme-se em uma bomba viva que explode após um curto atraso atordoando todos os inimigos em seu raio."
+            binding.skilldescription.text =
+                "Transforme-se em uma bomba viva que explode após um curto atraso atordoando todos os inimigos em seu raio."
             binding.skillrange.text = "12m Gama"
             binding.skillduration.text = "160 Danos"
             binding.skilltime.text = "127 Recarga"
@@ -85,7 +90,8 @@ class infernosProfile : AppCompatActivity() {
             binding.skilldetailthree.text = ""
             binding.skillleveldetail.text = "40 Recarga "
             binding.skillleveldetailtwo.text = "+0,5 Atordoamento Duraçãoe +4m Raio"
-            binding.skillleveldetailthree.text = "+115 Dano e 100% lifesteal de heróis inimigos atingidos"
+            binding.skillleveldetailthree.text =
+                "+115 Dano e 100% lifesteal de heróis inimigos atingidos"
         }
         fun hideSystemUI() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {

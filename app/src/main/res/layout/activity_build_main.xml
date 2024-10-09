@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -22,7 +21,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingBottom="80dp">
-
 
 
             <LinearLayout
@@ -47,8 +45,7 @@
                 android:textSize="15sp"
                 android:gravity="center"
                 android:fontFamily="@font/abril_fatface"
-                android:textColor="#828282"
-                />
+                android:textColor="#828282" />
 
             <LinearLayout
                 android:id="@+id/buildadone"
@@ -80,16 +77,19 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adcartuchobasico" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adcaraacara" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adtiroreforcadonacabeca" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -109,16 +109,19 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adbaladepontaoca" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/admunicaomatamonstros" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adbalasrapidas" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -129,6 +132,7 @@
 
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/buildadtwo"
                 android:layout_width="match_parent"
@@ -159,16 +163,19 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adartilhariarapida" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adavancocinetico" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adbalasrompedoras" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -188,16 +195,19 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adfuria" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adgolpecarregado" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adlongoalcance" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -205,6 +215,7 @@
                         android:src="@drawable/adrecarregamentoativo" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -215,6 +226,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adbalasmistica" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -224,6 +236,7 @@
 
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/buildadthree"
                 android:layout_width="match_parent"
@@ -254,16 +267,19 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adauradecaca" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adbalasdetesla" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adbalastoxicas" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -283,16 +299,19 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adcartuchointensificador" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/ademblemaimaculado" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adqueimaroupa" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -300,6 +319,7 @@
                         android:src="@drawable/adrajadadebalas" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -311,16 +331,19 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adresistenciacrescente" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adtirodeelite" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adauraheroica" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -328,6 +351,7 @@
                         android:src="@drawable/adfogoalquimico" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -337,11 +361,12 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:src="@drawable/adpedraerratica"/>
+                        android:src="@drawable/adpedraerratica" />
 
                 </LinearLayout>
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/buildadfor"
                 android:layout_width="match_parent"
@@ -372,16 +397,19 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adbalasabsorventes" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adcanhaodevidro" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/addisparodesorte" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -401,16 +429,19 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adricochete" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adtirodebilitantenacabeca" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adtransedenciaespiritual" />
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -418,6 +449,7 @@
                         android:src="@drawable/adrajadavampirica" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -432,8 +464,6 @@
                 </LinearLayout>
 
             </LinearLayout>
-
-
 
 
         </LinearLayout>

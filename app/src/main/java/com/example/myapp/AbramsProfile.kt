@@ -33,7 +33,8 @@ class AbramsProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Siphon Life"
-            binding.skilldescription.text = "Escorra a saúde dos inimigos à sua frente enquanto eles estão no raio."
+            binding.skilldescription.text =
+                "Escorra a saúde dos inimigos à sua frente enquanto eles estão no raio."
             binding.skillrange.text = "10m"
             binding.skillduration.text = "Duração: 4s"
             binding.skilltime.text = "42s recarga"
@@ -47,7 +48,8 @@ class AbramsProfile : AppCompatActivity() {
         binding.skille.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Shoulder Charge "
-            binding.skilldescription.text = "Corre para a frente colidindo com inimigos e arrastándo. Bater em uma parede Atordoa inimigos capturados por Abrams. Velocidade aumentada após colidir com Heróis inimigos."
+            binding.skilldescription.text =
+                "Corre para a frente colidindo com inimigos e arrastándo. Bater em uma parede Atordoa inimigos capturados por Abrams. Velocidade aumentada após colidir com Heróis inimigos."
             binding.skillrange.text = "Na"
             binding.skillduration.text = "1.2s Duração "
             binding.skilltime.text = "37s Recarga "
@@ -56,12 +58,14 @@ class AbramsProfile : AppCompatActivity() {
             binding.skilldetailthree.text = "0.85s Duração do Atordoamento"
             binding.skillleveldetail.text = "- 20s Recarga "
             binding.skillleveldetailtwo.text = "+0,5s Duração "
-            binding.skillleveldetailthree.text = "+5.5 Dano de Arma por 8s depois de colidir com um inimigo"
+            binding.skillleveldetailthree.text =
+                "+5.5 Dano de Arma por 8s depois de colidir com um inimigo"
         }
         binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Infernal Resilience"
-            binding.skilldescription.text = "Regenerar uma parte do dano recebido ao longo do tempo."
+            binding.skilldescription.text =
+                "Regenerar uma parte do dano recebido ao longo do tempo."
             binding.skillrange.text = "15% de Dano Regenerado"
             binding.skillduration.text = "tempo de Regeneração 18S"
             binding.skilltime.text = "+1 Regen Saúde"
@@ -75,7 +79,8 @@ class AbramsProfile : AppCompatActivity() {
         binding.skillx.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Seismic Impact"
-            binding.skilldescription.text = "Salte alto no ar e escolha um local no chão para esmagar. Quando você bate no chão, todos os inimigos no raio estão danificados e atordoados. Pressione [LMC] para travar mais cedo."
+            binding.skilldescription.text =
+                "Salte alto no ar e escolha um local no chão para esmagar. Quando você bate no chão, todos os inimigos no raio estão danificados e atordoados. Pressione [LMC] para travar mais cedo."
             binding.skillrange.text = "1s Duração do Atordoamento"
             binding.skillduration.text = "impacto de 9M Raio"
             binding.skilltime.text = "159 Recarga "
@@ -85,7 +90,8 @@ class AbramsProfile : AppCompatActivity() {
             binding.skillleveldetail.text = "recarga dos anos 40\n" +
                     "\n"
             binding.skillleveldetailtwo.text = "Ganhe 100 Max HP e 15% de Taxa de Fogo po"
-            binding.skillleveldetailthree.text = "No elenco, torne-se Imune ao Atordoamento, Silêncio, Sono"
+            binding.skillleveldetailthree.text =
+                "No elenco, torne-se Imune ao Atordoamento, Silêncio, Sono"
         }
 
         fun hideSystemUI() {

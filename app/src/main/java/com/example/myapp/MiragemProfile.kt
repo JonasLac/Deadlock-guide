@@ -29,7 +29,8 @@ class MiragemProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Tornado "
-            binding.skilldescription.text = "Transforme-se em um tornado que viaja para a frente danificar inimigos e levantando-os no ar. Depois de sair do tornado, você ganha evasão de balas."
+            binding.skilldescription.text =
+                "Transforme-se em um tornado que viaja para a frente danificar inimigos e levantando-os no ar. Depois de sair do tornado, você ganha evasão de balas."
             binding.skillrange.text = "0.75s Duração "
             binding.skillduration.text = "32s Recarga "
             binding.skilltime.text = "3.5m Raio "
@@ -43,7 +44,8 @@ class MiragemProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Fire Scarabs"
-            binding.skilldescription.text = "Comece a lançar escaravelhos de fogo. Cada escaravelho pode ser lançado separadamente, roubar saúde máxima dos inimigos e aplicando bala resiste à redução. Não é possível aplicar vários escaravelhos ao mesmo inimigo. O ganho de saúde de bater heróis é 3x mais eficaz contra não-heróis."
+            binding.skilldescription.text =
+                "Comece a lançar escaravelhos de fogo. Cada escaravelho pode ser lançado separadamente, roubar saúde máxima dos inimigos e aplicando bala resiste à redução. Não é possível aplicar vários escaravelhos ao mesmo inimigo. O ganho de saúde de bater heróis é 3x mais eficaz contra não-heróis."
             binding.skillrange.text = "4 Cobranças "
             binding.skillduration.text = "0s Recarga Entre Cargas"
             binding.skilltime.text = "90 Max Roubo de Saúde"
@@ -57,21 +59,26 @@ class MiragemProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Djinn's Mark"
-            binding.skilldescription.text = "Passivo: Seus tiros aplique um multiplicador crescente no alvo. Quando o multiplicador em um alvo expira ou você atinge o máximo, ele é consumido e o alvo sofre Dano do Espírito e é brevemente revelado no mapa. O dano final é o dano base vezes o multiplicador."
+            binding.skilldescription.text =
+                "Passivo: Seus tiros aplique um multiplicador crescente no alvo. Quando o multiplicador em um alvo expira ou você atinge o máximo, ele é consumido e o alvo sofre Dano do Espírito e é brevemente revelado no mapa. O dano final é o dano base vezes o multiplicador."
             binding.skillrange.text = "multiplicador Máximo 8X"
             binding.skillduration.text = "multiplicador Máximo 8X"
             binding.skilltime.text = "duração do Multiplicador 4.5S"
             binding.skilldetailone.text = "2s Revelar Duração"
-            binding.skilldetailtwo.text = "Ativo: Consumir multiplicador da Marca de Djinn para causar dano agora."
+            binding.skilldetailtwo.text =
+                "Ativo: Consumir multiplicador da Marca de Djinn para causar dano agora."
             binding.skilldetailthree.text = ""
-            binding.skillleveldetail.text = "Aplique 80% Lento por 0,5s sempre que o multiplicador for 2x ou superior"
+            binding.skillleveldetail.text =
+                "Aplique 80% Lento por 0,5s sempre que o multiplicador for 2x ou superior"
             binding.skillleveldetailtwo.text = "+4s Duração do Multiplicador e +10 Dano Base"
-            binding.skillleveldetailthree.text = "- 0.5s Recarga Entre Multiplicador e +4 Multiplicador Máximo"
+            binding.skillleveldetailthree.text =
+                "- 0.5s Recarga Entre Multiplicador e +4 Multiplicador Máximo"
         }
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Traveler"
-            binding.skilldescription.text = "Canalizado. Alvo um aliado ou herói inimigo visível no minimapa, então teletransporte onde estavam quando o canal começou. Depois de se teletransportar, você ganha velocidade do movimento bem como taxa de disparo até a sua próxima recarga."
+            binding.skilldescription.text =
+                "Canalizado. Alvo um aliado ou herói inimigo visível no minimapa, então teletransporte onde estavam quando o canal começou. Depois de se teletransportar, você ganha velocidade do movimento bem como taxa de disparo até a sua próxima recarga."
             binding.skillrange.text = "130 Recarga "
             binding.skillduration.text = "canal 2.5S Duração "
             binding.skilltime.text = "+2m/s Velocidade de Movimento"

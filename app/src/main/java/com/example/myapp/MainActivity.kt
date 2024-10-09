@@ -214,10 +214,12 @@ class MainActivity : AppCompatActivity() {
             })
             .withNativeAdOptions(
                 NativeAdOptions.Builder()
-                .build())
+                    .build()
+            )
             .build()
         adLoader.loadAd(AdRequest.Builder().build())
     }
+
     private fun populateNativeAdView(nativeAd: NativeAd) {
         val headlineView = findViewById<TextView>(R.id.admob)
         headlineView.text = nativeAd.headline

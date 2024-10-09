@@ -127,7 +127,7 @@
                 android:gravity="center"
                 android:textSize="20sp"
                 android:fontFamily="@font/abril_fatface"
-                android:textColor="#ff1"/>
+                android:textColor="#ff1" />
 
             <TextView
                 android:id="@+id/skilldescription"
@@ -138,7 +138,7 @@
                 android:fontFamily="@font/abril_fatface"
                 android:textSize="20sp"
                 android:layout_margin="20sp"
-                android:gravity="center"/>
+                android:gravity="center" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -163,7 +163,7 @@
                         android:layout_margin="5sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/skilldetailone"
@@ -173,9 +173,10 @@
                         android:layout_margin="5sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
@@ -191,7 +192,7 @@
                         android:layout_margin="5sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/skilldetailtwo"
@@ -201,9 +202,10 @@
                         android:layout_margin="5sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -219,7 +221,7 @@
                         android:layout_margin="5sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/skilldetailthree"
@@ -229,7 +231,7 @@
                         android:layout_margin="5sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                 </LinearLayout>
 
@@ -244,14 +246,13 @@
                 android:fontFamily="@font/abril_fatface"
                 android:textSize="20sp"
                 android:gravity="center"
-                android:textColor="#bcb494"/>
+                android:textColor="#bcb494" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -269,7 +270,7 @@
                         android:layout_margin="5sp"
                         android:text="1 AP"
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/skillleveldetail"
@@ -281,9 +282,10 @@
                         android:layout_margin="5sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -299,7 +301,7 @@
                         android:layout_margin="5sp"
                         android:text="2 AP"
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/skillleveldetailtwo"
@@ -311,9 +313,10 @@
                         android:maxWidth="120sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -329,7 +332,7 @@
                         android:layout_margin="5sp"
                         android:text="3 AP"
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/skillleveldetailthree"
@@ -341,13 +344,12 @@
                         android:maxWidth="120sp"
                         android:text=""
                         android:fontFamily="@font/abril_fatface"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
 
                 </LinearLayout>
 
 
             </LinearLayout>
-
 
 
         </LinearLayout>

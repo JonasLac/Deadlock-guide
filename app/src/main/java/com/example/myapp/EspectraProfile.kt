@@ -31,7 +31,8 @@ class EspectraProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Card Trick"
-            binding.skilldescription.text = "Cause dano de arma para invocar cartas. Ative para jogar uma carta que voa em direção ao inimigo ou apontar sob sua mira."
+            binding.skilldescription.text =
+                "Cause dano de arma para invocar cartas. Ative para jogar uma carta que voa em direção ao inimigo ou apontar sob sua mira."
             binding.skillrange.text = "5m Raio "
             binding.skillduration.text = ""
             binding.skilltime.text = "0.75s Recarga "
@@ -53,13 +54,15 @@ class EspectraProfile : AppCompatActivity() {
             binding.skilldetailtwo.text = ""
             binding.skilldetailthree.text = ""
             binding.skillleveldetail.text = "+15m Cast Range"
-            binding.skillleveldetailtwo.text = "Fornece um 300 Escudo de bala para 8s no teletransporte. A quantidade de Escudo escala com o Poder Espiritual."
+            binding.skillleveldetailtwo.text =
+                "Fornece um 300 Escudo de bala para 8s no teletransporte. A quantidade de Escudo escala com o Poder Espiritual."
             binding.skillleveldetailthree.text = "30 Recarga "
         }
         binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Full Auto"
-            binding.skilldescription.text = "Aumenta temporariamente o seu taxa de incêndio. Aliados próximos recebem metade do bônus de taxa de fogo."
+            binding.skilldescription.text =
+                "Aumenta temporariamente o seu taxa de incêndio. Aliados próximos recebem metade do bônus de taxa de fogo."
             binding.skillrange.text = "25m Raio "
             binding.skillduration.text = "Na"
             binding.skilltime.text = "48s Recarga"
@@ -73,7 +76,8 @@ class EspectraProfile : AppCompatActivity() {
         binding.skillx.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Telekinesis"
-            binding.skilldescription.text = "Levante um herói inimigo para o ar, e deslumbrante eles por um curto período de tempo. Quando o elevador termina, o alvo recebe dano de telecinese."
+            binding.skilldescription.text =
+                "Levante um herói inimigo para o ar, e deslumbrante eles por um curto período de tempo. Quando o elevador termina, o alvo recebe dano de telecinese."
             binding.skillrange.text = "20m Gama "
             binding.skillduration.text = "Na"
             binding.skilltime.text = "1.25 Duração"
@@ -82,7 +86,8 @@ class EspectraProfile : AppCompatActivity() {
             binding.skilldetailthree.text = "200 Danos"
             binding.skillleveldetail.text = "30 Recarga "
             binding.skillleveldetailtwo.text = "+0,5s Duração "
-            binding.skillleveldetailthree.text = "Telekinesis terá como alvo inimigos em uma área ao redor de Wraith"
+            binding.skillleveldetailthree.text =
+                "Telekinesis terá como alvo inimigos em uma área ao redor de Wraith"
         }
         fun hideSystemUI() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {

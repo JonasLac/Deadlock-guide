@@ -36,21 +36,25 @@ class DinamoProfile : AppCompatActivity() {
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Kinetic Pulse"
-            binding.skilldescription.text = "Libere um pulso de energia que derruba os inimigos no ar"
+            binding.skilldescription.text =
+                "Libere um pulso de energia que derruba os inimigos no ar"
             binding.skillrange.text = "1 Cobranças"
             binding.skillduration.text = "5s Recarga Entre Cargas"
             binding.skilltime.text = "26s Recarga"
             binding.skilldetailone.text = "100 Danos"
             binding.skilldetailtwo.text = "faixa de Stomp de 15M"
             binding.skilldetailthree.text = "largura da Habilidade 5M"
-            binding.skillleveldetail.text = "Os inimigos atingidos são a taxa de disparo e o movimento desacelerado em 35% por 4s."
-            binding.skillleveldetailtwo.text = "Dínamo causa 30% a mais de Dano de Arma para acertar inimigos por 8s"
+            binding.skillleveldetail.text =
+                "Os inimigos atingidos são a taxa de disparo e o movimento desacelerado em 35% por 4s."
+            binding.skillleveldetailtwo.text =
+                "Dínamo causa 30% a mais de Dano de Arma para acertar inimigos por 8s"
             binding.skillleveldetailthree.text = "+125 Danos"
         }
         binding.skille.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Quantum Entanglement"
-            binding.skilldescription.text = "Dínamo brevemente desaparece no vazio e então reaparece a uma curta distância. Ao reaparecer, a tua arma é recarregado e tem um bônus de taxa de fogo para o próximo clipe. Pode ser lançado com [M3] para também trazer aliados próximos e dar-lhes metade bônus de taxa de fogo."
+            binding.skilldescription.text =
+                "Dínamo brevemente desaparece no vazio e então reaparece a uma curta distância. Ao reaparecer, a tua arma é recarregado e tem um bônus de taxa de fogo para o próximo clipe. Pode ser lançado com [M3] para também trazer aliados próximos e dar-lhes metade bônus de taxa de fogo."
             binding.skillrange.text = "9m Gama"
             binding.skillduration.text = "9m Ally Distância"
             binding.skilltime.text = "12.5s Recarga"
@@ -64,21 +68,25 @@ class DinamoProfile : AppCompatActivity() {
         binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Rejuvenating Aurora"
-            binding.skilldescription.text = "Enquanto canaliza, restaurar a saúde ao longo do tempo para você e quaisquer aliados próximos."
+            binding.skilldescription.text =
+                "Enquanto canaliza, restaurar a saúde ao longo do tempo para você e quaisquer aliados próximos."
             binding.skillrange.text = "32/s Saúde Restaurada"
             binding.skillduration.text = "Na"
             binding.skilltime.text = "48s Recarga "
             binding.skilldetailone.text = "canal 5S Duração "
             binding.skilldetailtwo.text = "Na"
             binding.skilldetailthree.text = "8m Cura Amigável Raio"
-            binding.skillleveldetail.text = "Ganhe +4m/s de bónus de velocidade móvel para 8s se o Aurora estiver totalmente canalizado. Ganhe instantaneamente com a atualização 5AP."
+            binding.skillleveldetail.text =
+                "Ganhe +4m/s de bónus de velocidade móvel para 8s se o Aurora estiver totalmente canalizado. Ganhe instantaneamente com a atualização 5AP."
             binding.skillleveldetailtwo.text = "15 Recarga"
-            binding.skillleveldetailthree.text = "Movimentação total e uso de habilidade e, adicionalmente, cura +3,8% do Max Health por segundo"
+            binding.skillleveldetailthree.text =
+                "Movimentação total e uso de habilidade e, adicionalmente, cura +3,8% do Max Health por segundo"
         }
         binding.skillx.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Singularity"
-            binding.skilldescription.text = "Crie uma singularidade em suas mãos que puxa inimigos próximos e os danifica. Uma vez terminado, os inimigos são derrubados no ar."
+            binding.skilldescription.text =
+                "Crie uma singularidade em suas mãos que puxa inimigos próximos e os danifica. Uma vez terminado, os inimigos são derrubados no ar."
             binding.skillrange.text = "canal 2.75S Duração"
             binding.skillduration.text = "Na"
             binding.skilltime.text = "191 Recarga "
@@ -87,7 +95,8 @@ class DinamoProfile : AppCompatActivity() {
             binding.skilldetailthree.text = "raio de Singularidade de 7M"
             binding.skillleveldetail.text = "+2m Singularidade Raio "
             binding.skillleveldetailtwo.text = "+0,75 Canal Duração "
-            binding.skillleveldetailthree.text = "Singularidade leva 3,8% da vida máxima dos inimigos a cada segundo"
+            binding.skillleveldetailthree.text =
+                "Singularidade leva 3,8% da vida máxima dos inimigos a cada segundo"
         }
         fun hideSystemUI() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
