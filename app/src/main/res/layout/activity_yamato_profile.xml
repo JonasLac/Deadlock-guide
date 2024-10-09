@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:contentDescription="@string/app_name"
+    android:orientation="vertical"
+    tools:context=".YamatoProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/iconlogoback"
+                android:layout_width="105dp"
+                android:layout_height="97dp"
+                android:src="@drawable/icondeadlock" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abril_fatface"
+            android:gravity="center"
+            android:text="Precione o icone para voltar"
+            android:textColor="#828282"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:fontFamily="@font/abril_fatface"
+                android:gravity="center"
+                android:text="Yamato"
+                android:textColor="#bcb494"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="410sp"
+            android:layout_height="500sp"
+            android:src="@drawable/splashyamato" />
+
+
+        <TextView
+            android:id="@+id/selectskill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:fontFamily="@font/abril_fatface"
+            android:gravity="center"
+            android:text="Selecione uma skill para saber mais"
+            android:textColor="#bcb494"
+            android:textSize="23sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/skillq"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:src="@drawable/skillyamatoq" />
+
+            <ImageView
+                android:id="@+id/skille"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:src="@drawable/skillyamatoe" />
+
+            <ImageView
+                android:id="@+id/skillc"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:src="@drawable/skillyamatoc" />
+
+            <ImageView
+                android:id="@+id/skillx"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:src="@drawable/skillyamatox" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutskills"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/skillselect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="@font/abril_fatface"
+                android:textColor="#ff1"/>
+
+            <TextView
+                android:id="@+id/skilldescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#fff"
+                android:fontFamily="@font/abril_fatface"
+                android:textSize="20sp"
+                android:layout_margin="20sp"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/skillrange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_margin="5sp"
+                        android:text=""
+                        android:fontFamily="@font/abril_fatface"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/skilldetailone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_margin="5sp"
+                        android:text=""
+                        android:fontFamily="@font/abril_fatface"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/skillduration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_margin="5sp"
+                        android:text=""
+                        android:fontFamily="@font/abril_fatface"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/skilldetailtwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_margin="5sp"
+                        android:text=""
+                        android:fontFamily="@font/abril_fatface"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/skilltime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_margin="5sp"
+                        android:text=""
+                        android:fontFamily="@font/abril_fatface"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/skilldetailthree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_margin="5sp"
+                        android:text=""
+                        android:fontFamily="@font/abril_fatface"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Atualizações da Skill"
+                android:layout_margin="20sp"
+                android:fontFamily="@font/abril_fatface"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#bcb494"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/skilllevelone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_margin="5sp"
+                        android:text="1 AP"
+                        android:fontFamily="@font/abril_fatface"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/skillleveldetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxHeight="120sp"
+                        android:maxWidth="120sp"
+                        android:textSize="15sp"
+                        android:layout_margin="5sp"
+                        android:text=""
+                        android:fontFamily="@font/abril_fatface"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/skillleveltwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_margin="5sp"
+                        android:text="2 AP"
+                        android:fontFamily="@font/abril_fatface"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/skillleveldetailtwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_margin="5sp"
+                        android:maxHeight="120sp"
+                        android:maxWidth="120sp"
+                        android:text=""
+                        android:fontFamily="@font/abril_fatface"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/skilllevelthree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_margin="5sp"
+                        android:text="3 AP"
+                        android:fontFamily="@font/abril_fatface"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/skillleveldetailthree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_margin="5sp"
+                        android:maxHeight="120sp"
+                        android:maxWidth="120sp"
+                        android:text=""
+                        android:fontFamily="@font/abril_fatface"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abril_fatface"
+                android:gravity="center"
+                android:text="In Game"
+                android:textColor="#bcb494"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250sp"
+                android:layout_margin="10sp"
+                android:src="@drawable/infernosingame" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:fontFamily="@font/abril_fatface"
+                android:gravity="center"
+                android:text="Yamatoé um personagem explosivo que pode ir ao modo deus com seu ultimate que permite que ela se torne invencível e redefine todas as suas recargas de habilidade.
+
+Ela tem dedicação para aprender, mas uma vez dominada, pode realmente dominar com seu potencial de superação."
+                android:textColor="#bcb494"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

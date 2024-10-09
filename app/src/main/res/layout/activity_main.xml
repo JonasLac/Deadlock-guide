@@ -1,0 +1,1406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:contentDescription="@string/app_name"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="97dp"
+                    android:layout_marginTop="2sp"
+                    android:src="@drawable/icondeadlock" />
+
+            </LinearLayout>
+
+            <com.google.android.gms.ads.nativead.NativeAdView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/admob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ad_headline"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Título do anúncio" />
+
+            </com.google.android.gms.ads.nativead.NativeAdView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abril_fatface"
+                    android:gravity="center"
+                    android:text="Pesquise seu personagem"
+                    android:textColor="#bcb494"
+                    android:textSize="20sp" />
+
+                <SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/abril_fatface"
+                    android:gravity="center"
+                    android:hint="@string/app_name"
+                    android:textColor="#bcb494"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layoutabrams"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Abrams"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Tank\nEngage\nCorpo a corpo\nRegenaração"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textradius"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: Facil"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/perabrams" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutadaga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Adaga"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Assasino\nFinalização"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textdificil"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: dificil"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/peradaga" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutbebop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="BeBop"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Grab\nEngage"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textmedio"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: Medio"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/perbebop" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutbruma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Bruma"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Alto dano\nInfiltração"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textmedio"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: Medio"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/perbruma" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutchico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="chico"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Engage\nStun\nForte TF"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textdificil"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: dificil"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/perchico" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutdinamo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="dínamo"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Cura\nPoke\nSuporte"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textradius"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: Facil"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/perdinamo" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutespectra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Espectra"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Poke\nStun\nVelocidade\nde disparo"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textdificil"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: dificil"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/perespectra" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutgarracinza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Garra\nCinza"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Engage\nLongo-\nalcance"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textradius"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: Facil"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/pergarracinza" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutguarda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Guarda"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Alto dano\nRegeneração"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textdificil"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: dificil"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/perguarda" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layouthera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Hera"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Suporte\nEngage"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textmedio"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: Medio"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/perhera" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutinfernos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Infernos"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Poke\nEngage\nRotação"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textradius"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: Facil"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/perinfernos" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutkelvin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Kelvin"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Lentidão"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textmedio"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: Medio"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/perkelvin" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutladygeist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Lady\nGeist"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Roubo de-\nvida\nDano disparo"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textdificil"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: dificil"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/perladygeist" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutmala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Mala"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Engage\nVeneno\nCorpo a Corpo"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textdificil"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: dificil"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/permala" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutmcguinnis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="Mc\nGuinnis"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Dano em área\nCura"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textmedio"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: Medio"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/permcguinnis" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutmoekrill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Mo\n Krill"
+                            android:gravity="center"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Engage\nStun\nChatão"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textdificil"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: dificil"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/permoekrill" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutmiragem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Miragem"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Rotação"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textradius"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: Facil"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/permiragem" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutparadoxa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Paradoxa"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Alto dano\nStun\nGameplay de-\nalto nivel"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textdificil"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: dificil"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/perparadoxa" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layoutsete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Sete"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Dano em área\nStun\nForte TF"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textmedio"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: Medio"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/persete" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutvindicta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Vindicta"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Sniper\nFinalizado"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textradius"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: Facil"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/pervindicta" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutviscoso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Viscoso"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Tank\nEngage"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textdificil"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: Dificil"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/perviscoso" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutyamato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="140sp"
+                        android:layout_height="match_parent"
+                        android:background="#bcb494"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Yamato"
+                            android:textColor="#041c14"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:fontFamily="@font/abril_fatface"
+                            android:text="Corpo a corpo\nAlto dano\nEngage\nImortal"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="100sp"
+                            android:layout_height="30sp"
+                            android:background="@drawable/textdificil"
+                            android:fontFamily="@font/abril_fatface"
+                            android:gravity="center"
+                            android:text="dificuldade: dificil"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/peryamato" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navbuild"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="10sp"
+        app:itemBackground="@drawable/ripple"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        android:background="@drawable/bottom_nav_background"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

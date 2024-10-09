@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/iconapp"
+        android:label="Deadlock"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".TestAdmob"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2104181702379477~5204333674" />
+
+
+        <activity
+            android:name=".MiragemProfile"
+            android:exported="false" />
+        <activity
+            android:name=".BrumaProlife"
+            android:exported="false" />
+        <activity
+            android:name=".ViscosoProfile"
+            android:exported="false" />
+        <activity
+            android:name=".SeteProfile"
+            android:exported="false" />
+        <activity
+            android:name=".MoKrillProfile"
+            android:exported="false" />
+        <activity
+            android:name=".McProfile"
+            android:exported="false" />
+        <activity
+            android:name=".LadyProfile"
+            android:exported="false"
+            android:theme="@style/Theme.MyApp" />
+        <activity
+            android:name=".KelvinProfile"
+            android:exported="false" />
+        <activity
+            android:name=".MalaProfile"
+            android:exported="false" />
+        <activity
+            android:name=".HeraProfile"
+            android:exported="false" />
+        <activity
+            android:name=".GuardaProfile"
+            android:exported="false" />
+        <activity
+            android:name=".GarraProfile"
+            android:exported="false" />
+        <activity
+            android:name=".EspectraProfile"
+            android:exported="false" />
+        <activity
+            android:name=".BebopProfile"
+            android:exported="false" />
+        <activity
+            android:name=".AdagaProfile"
+            android:exported="false" />
+        <activity
+            android:name=".YamatoProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityApFor"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityApThree"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityApTwo"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityApOne"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityVdFor"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityVdThree"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityVdTwo"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityVdOne"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAdFor"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAdThree"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAdTwo"
+            android:exported="false" />
+        <activity
+            android:name=".BuildMainVd"
+            android:exported="false" />
+        <activity
+            android:name=".BuildMainEsp"
+            android:exported="false" />
+        <activity
+            android:name=".BuildAdOne"
+            android:exported="false" />
+        <activity
+            android:name=".BuildMain"
+            android:exported="false" />
+        <activity
+            android:name=".ChicoProfile"
+            android:exported="false" />
+        <activity
+            android:name=".VindictaProfile"
+            android:exported="false" />
+        <activity
+            android:name=".AbramsProfile"
+            android:exported="false" />
+        <activity
+            android:name=".DinamoProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ParadoxaProfile"
+            android:exported="false" />
+        <activity
+            android:name=".infernosProfile"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
