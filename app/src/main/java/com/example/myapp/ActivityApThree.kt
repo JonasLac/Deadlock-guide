@@ -20,6 +20,7 @@ class ActivityApThree : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         fun hideSystemUI() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
                 // Android 11 (API 30) e acima

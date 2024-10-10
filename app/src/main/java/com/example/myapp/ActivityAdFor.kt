@@ -27,6 +27,7 @@ class ActivityAdFor : AppCompatActivity() {
         binding.iconlogoback.setOnClickListener {
             finish()
         }
+
         fun hideSystemUI() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
                 // Android 11 (API 30) e acima

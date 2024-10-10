@@ -26,6 +26,7 @@ class ActivityVdThree : AppCompatActivity() {
         binding.iconlogoback.setOnClickListener {
             finish()
         }
+
         fun hideSystemUI() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
 

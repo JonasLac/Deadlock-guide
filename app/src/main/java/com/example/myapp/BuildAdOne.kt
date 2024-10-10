@@ -31,6 +31,7 @@ class BuildAdOne : AppCompatActivity() {
             finish()
         }
 
+
         binding.iconlogoback.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }

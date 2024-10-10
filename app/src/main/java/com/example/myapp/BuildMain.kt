@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.databinding.ActivityBuildMainBinding
+import com.google.android.gms.ads.AdRequest
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class BuildMain : AppCompatActivity() {
@@ -19,7 +20,6 @@ class BuildMain : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityBuildMainBinding.inflate(layoutInflater)
 
         enableEdgeToEdge()
@@ -29,6 +29,9 @@ class BuildMain : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        binding.adView.loadAd(AdRequest.Builder().build())
+        binding.adViewtwo.loadAd(AdRequest.Builder().build())
+        binding.adViewthee.loadAd(AdRequest.Builder().build())
 
         /*binding.buildadone.setOnClickListener {
             startActivity(Intent(this, BuildAdOne::class.java))

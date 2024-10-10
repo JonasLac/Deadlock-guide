@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.databinding.ActivityBuildMainEspBinding
+import com.google.android.gms.ads.AdRequest
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class BuildMainEsp : AppCompatActivity() {
@@ -27,6 +28,9 @@ class BuildMainEsp : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        binding.adView.loadAd(AdRequest.Builder().build())
+        binding.adViewtwo.loadAd(AdRequest.Builder().build())
+        binding.adViewthree.loadAd(AdRequest.Builder().build())
 
         binding.iconlogoback.setOnClickListener {
             finish()

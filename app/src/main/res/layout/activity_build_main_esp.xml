@@ -124,7 +124,19 @@
                 </LinearLayout>
 
             </LinearLayout>
-
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100sp"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView"
+                    android:layout_width= "wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:adSize="BANNER"
+                    app:adUnitId="ca-app-pub-2104181702379477/5877855741"/>
+            </LinearLayout>
             <LinearLayout
                 android:id="@+id/buildaptwo"
                 android:layout_width="match_parent"
@@ -234,7 +246,19 @@
 
 
             </LinearLayout>
-
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100sp"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adViewtwo"
+                    android:layout_width= "wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:adSize="BANNER"
+                    app:adUnitId="ca-app-pub-2104181702379477/9232344068"/>
+            </LinearLayout>
             <LinearLayout
                 android:id="@+id/buildapthree"
                 android:layout_width="match_parent"
@@ -349,7 +373,19 @@
 
 
             </LinearLayout>
-
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100sp"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adViewthree"
+                    android:layout_width= "wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:adSize="BANNER"
+                    app:adUnitId="ca-app-pub-2104181702379477/3391293200"/>
+            </LinearLayout>
             <LinearLayout
                 android:id="@+id/buildapfor"
                 android:layout_width="match_parent"

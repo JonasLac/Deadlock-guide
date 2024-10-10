@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.databinding.ActivityBuildMainVdBinding
+import com.google.android.gms.ads.AdRequest
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class BuildMainVd : AppCompatActivity() {
@@ -30,7 +31,9 @@ class BuildMainVd : AppCompatActivity() {
         binding.iconlogoback.setOnClickListener {
             finish()
         }
-
+        binding.adView.loadAd(AdRequest.Builder().build())
+        binding.adViewtwo.loadAd(AdRequest.Builder().build())
+        binding.adViewthee.loadAd(AdRequest.Builder().build())
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.navbuild)
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
