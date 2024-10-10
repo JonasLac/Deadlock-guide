@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.databinding.ActivityParadoxaProfile2Binding
+import com.google.android.gms.ads.AdRequest
 
 class ParadoxaProfile : AppCompatActivity() {
 
@@ -30,6 +31,8 @@ class ParadoxaProfile : AppCompatActivity() {
         binding.iconlogoback.setOnClickListener {
             finish()
         }
+        binding.adView.loadAd(AdRequest.Builder().build())
+
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Pulse Grenade"

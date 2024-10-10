@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.databinding.ActivityViscosoProfileBinding
+import com.google.android.gms.ads.AdRequest
 
 class ViscosoProfile : AppCompatActivity() {
     private lateinit var binding: ActivityViscosoProfileBinding
@@ -26,6 +27,8 @@ class ViscosoProfile : AppCompatActivity() {
         binding.iconlogoback.setOnClickListener {
             finish()
         }
+        binding.adView.loadAd(AdRequest.Builder().build())
+
         binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Puddle Punch "

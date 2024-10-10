@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.databinding.ActivityEspectraProfileBinding
+import com.google.android.gms.ads.AdRequest
 
 class EspectraProfile : AppCompatActivity() {
     private lateinit var binding: ActivityEspectraProfileBinding
@@ -27,6 +28,7 @@ class EspectraProfile : AppCompatActivity() {
         binding.iconlogoback.setOnClickListener {
             finish()
         }
+        binding.adView.loadAd(AdRequest.Builder().build())
 
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE

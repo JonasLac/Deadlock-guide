@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.databinding.ActivityGuardaProfileBinding
+import com.google.android.gms.ads.AdRequest
 
 class GuardaProfile : AppCompatActivity() {
     private lateinit var binding: ActivityGuardaProfileBinding
@@ -26,6 +27,8 @@ class GuardaProfile : AppCompatActivity() {
         binding.iconlogoback.setOnClickListener {
             finish()
         }
+        binding.adView.loadAd(AdRequest.Builder().build())
+
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Alchemical Flask"

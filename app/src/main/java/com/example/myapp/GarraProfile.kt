@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.databinding.ActivityGarraProfileBinding
+import com.google.android.gms.ads.AdRequest
 
 class GarraProfile : AppCompatActivity() {
     private lateinit var binding: ActivityGarraProfileBinding
@@ -26,6 +27,8 @@ class GarraProfile : AppCompatActivity() {
         binding.iconlogoback.setOnClickListener {
             finish()
         }
+        binding.adView.loadAd(AdRequest.Builder().build())
+
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Charged Shot"

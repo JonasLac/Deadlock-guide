@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.databinding.ActivityBebopProfileBinding
+import com.google.android.gms.ads.AdRequest
 
 class BebopProfile : AppCompatActivity() {
     private lateinit var binding: ActivityBebopProfileBinding
@@ -118,6 +119,6 @@ class BebopProfile : AppCompatActivity() {
 
         }
         hideSystemUI()
-
+        binding.adView.loadAd(AdRequest.Builder().build())
     }
 }

@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.databinding.ActivityMoKrillProfileBinding
+import com.google.android.gms.ads.AdRequest
 
 class MoKrillProfile : AppCompatActivity() {
     private lateinit var binding: ActivityMoKrillProfileBinding
@@ -26,6 +27,8 @@ class MoKrillProfile : AppCompatActivity() {
         binding.iconlogoback.setOnClickListener {
             finish()
         }
+        binding.adView.loadAd(AdRequest.Builder().build())
+
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Scorn "

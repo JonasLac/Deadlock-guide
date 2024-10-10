@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.databinding.ActivityMiragemProfileBinding
+import com.google.android.gms.ads.AdRequest
 
 class MiragemProfile : AppCompatActivity() {
     private lateinit var binding: ActivityMiragemProfileBinding
@@ -26,6 +27,8 @@ class MiragemProfile : AppCompatActivity() {
         binding.iconlogoback.setOnClickListener {
             finish()
         }
+        binding.adView.loadAd(AdRequest.Builder().build())
+
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Tornado "

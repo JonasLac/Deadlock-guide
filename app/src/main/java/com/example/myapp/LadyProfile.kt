@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.databinding.ActivityLadyProfileBinding
+import com.google.android.gms.ads.AdRequest
 
 class LadyProfile : AppCompatActivity() {
     private lateinit var binding: ActivityLadyProfileBinding
@@ -20,6 +21,8 @@ class LadyProfile : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        binding.adView.loadAd(AdRequest.Builder().build())
+
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Essence Bomb"

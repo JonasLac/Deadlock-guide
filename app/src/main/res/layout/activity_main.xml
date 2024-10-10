@@ -333,7 +333,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         app:adSize="BANNER"
-                        app:adUnitId="ca-app-pub-3940256099942544/9214589741"/>
+                        app:adUnitId="ca-app-pub-2104181702379477/2569166121"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -641,7 +641,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         app:adSize="BANNER"
-                        app:adUnitId="ca-app-pub-3940256099942544/9214589741"/>
+                        app:adUnitId="ca-app-pub-2104181702379477/3391293200"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -946,7 +946,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         app:adSize="BANNER"
-                        app:adUnitId="ca-app-pub-3940256099942544/9214589741"/>
+                        app:adUnitId="ca-app-pub-2104181702379477/9232344068"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -1254,7 +1254,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         app:adSize="BANNER"
-                        app:adUnitId="ca-app-pub-3940256099942544/9214589741"/>
+                        app:adUnitId="ca-app-pub-2104181702379477/5877855741"/>
                 </LinearLayout>
 
                 <LinearLayout
