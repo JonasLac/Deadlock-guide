@@ -12,126 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp"
         tools:targetApi="31">
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-2104181702379477~7247510250" />
+
         <activity
-            android:name=".MiragemProfile"
-            android:exported="false" />
-        <activity
-            android:name=".TestAdmob"
-            android:exported="true"/>
-        <activity
-            android:name=".BrumaProlife"
-            android:exported="false" />
-        <activity
-            android:name=".ViscosoProfile"
-            android:exported="false" />
-        <activity
-            android:name=".SeteProfile"
-            android:exported="false" />
-        <activity
-            android:name=".MoKrillProfile"
-            android:exported="false" />
-        <activity
-            android:name=".McProfile"
-            android:exported="false" />
-        <activity
-            android:name=".LadyProfile"
-            android:exported="false"
-            android:theme="@style/Theme.MyApp" />
-        <activity
-            android:name=".KelvinProfile"
-            android:exported="false" />
-        <activity
-            android:name=".MalaProfile"
-            android:exported="false" />
-        <activity
-            android:name=".HeraProfile"
-            android:exported="false" />
-        <activity
-            android:name=".GuardaProfile"
-            android:exported="false" />
-        <activity
-            android:name=".GarraProfile"
-            android:exported="false" />
-        <activity
-            android:name=".EspectraProfile"
-            android:exported="false" />
-        <activity
-            android:name=".BebopProfile"
-            android:exported="false" />
-        <activity
-            android:name=".AdagaProfile"
-            android:exported="false" />
-        <activity
-            android:name=".YamatoProfile"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityApFor"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityApThree"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityApTwo"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityApOne"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityVdFor"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityVdThree"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityVdTwo"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityVdOne"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityAdFor"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityAdThree"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityAdTwo"
-            android:exported="false" />
-        <activity
-            android:name=".BuildMainVd"
-            android:exported="false" />
-        <activity
-            android:name=".BuildMainEsp"
-            android:exported="false" />
-        <activity
-            android:name=".BuildAdOne"
-            android:exported="false" />
-        <activity
-            android:name=".BuildMain"
-            android:exported="false" />
-        <activity
-            android:name=".ChicoProfile"
-            android:exported="false" />
-        <activity
-            android:name=".VindictaProfile"
-            android:exported="false" />
-        <activity
-            android:name=".AbramsProfile"
-            android:exported="false" />
-        <activity
-            android:name=".DinamoProfile"
-            android:exported="false" />
-        <activity
-            android:name=".ParadoxaProfile"
-            android:exported="false" />
-        <activity
-            android:name=".infernosProfile"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name="com.jlds.deadlockguide.StartActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -139,11 +26,129 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.jlds.deadlockguide.MiragemProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.TestAdmob"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.BrumaProlife"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.ViscosoProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.SeteProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.MoKrillProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.McProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.LadyProfile"
+            android:exported="false"
+            android:theme="@style/Theme.MyApp" />
+        <activity
+            android:name="com.jlds.deadlockguide.KelvinProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.MalaProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.HeraProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.GuardaProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.GarraProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.EspectraProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.BebopProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.AdagaProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.YamatoProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.ActivityApFor"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.ActivityApThree"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.ActivityApTwo"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.ActivityApOne"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.ActivityVdFor"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.ActivityVdThree"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.ActivityVdTwo"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.ActivityVdOne"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.ActivityAdFor"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.ActivityAdThree"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.ActivityAdTwo"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.BuildMainVd"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.BuildMainEsp"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.BuildAdOne"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.BuildMain"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.ChicoProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.VindictaProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.AbramsProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.DinamoProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.ParadoxaProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.infernosProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.jlds.deadlockguide.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
 </manifest>

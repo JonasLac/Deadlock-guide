@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "736632869571",
+    "project_id": "deadlock-guide",
+    "storage_bucket": "deadlock-guide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736632869571:android:e70073163da77282f30876",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL09d4MtRfjmXDmWejvizwt6XVr4sZx84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736632869571:android:6ad241ade9db5208f30876",
+        "android_client_info": {
+          "package_name": "com.jlds.deadlockguide"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL09d4MtRfjmXDmWejvizwt6XVr4sZx84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

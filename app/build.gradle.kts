@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.google.gms.google.services)
+    alias(libs.plugins.google.firebase.crashlytics)
 }
 
 android {
@@ -8,7 +10,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.myapp"
+        applicationId = "com.jlds.deadlockguide"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -37,6 +39,8 @@ android {
         viewBinding = true
     }
 
+    viewBinding { enable = true }
+
 }
 
 dependencies {
@@ -47,9 +51,9 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.firebase.config)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("com.google.android.gms:play-services-ads:23.3.0")
-
+    implementation("com.google.android.gms:play-services-ads:23.4.0")
 }

@@ -9,10 +9,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.jlds.deadlockguide" />
+                  <option name="mobileSdkAppId" value="1:736632869571:android:6ad241ade9db5208f30876" />
+                  <option name="projectId" value="deadlock-guide" />
+                  <option name="projectNumber" value="736632869571" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
