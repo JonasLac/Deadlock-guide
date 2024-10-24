@@ -23,7 +23,9 @@ class LadyProfile : AppCompatActivity() {
             insets
         }
         binding.adView.loadAd(AdRequest.Builder().build())
-
+        binding.iconlogoback.setOnClickListener {
+            finish()
+        }
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Essence Bomb"

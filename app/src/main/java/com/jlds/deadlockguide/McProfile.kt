@@ -19,7 +19,7 @@ class McProfile : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMcProfileBinding.inflate(layoutInflater)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_mc_profile)
+        setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -47,7 +47,7 @@ class McProfile : AppCompatActivity() {
                 "+10m Faixa de Ataque e 10% taxa de disparo de torreta"
             binding.skillleveldetailthree.text = "+45 Torre DPS"
         }
-        binding.skillq.setOnClickListener {
+        binding.skille.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Medicinal Specter"
             binding.skilldescription.text = "Implemente um espírito que cura unidades próximas."
@@ -62,7 +62,7 @@ class McProfile : AppCompatActivity() {
             binding.skillleveldetailtwo.text = "18 Recarga "
             binding.skillleveldetailthree.text = "+5% Regeneração máxima de Saúde por segundo"
         }
-        binding.skillq.setOnClickListener {
+        binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Spectral Wall"
             binding.skilldescription.text =
@@ -79,7 +79,7 @@ class McProfile : AppCompatActivity() {
             binding.skillleveldetailthree.text =
                 "Adiciona um Atordoamento de 1s aos inimigos atingidos pela Parede Espectral"
         }
-        binding.skillq.setOnClickListener {
+        binding.skillx.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Heavy Barrage"
             binding.skilldescription.text =

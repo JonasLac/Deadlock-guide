@@ -46,7 +46,7 @@ class MalaProfile : AppCompatActivity() {
             binding.skillleveldetailtwo.text = "15 Recarga"
             binding.skillleveldetailthree.text = "+4% Amp Por Pilha"
         }
-        binding.skillq.setOnClickListener {
+        binding.skille.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Flying Cloak"
             binding.skilldescription.text =
@@ -62,7 +62,7 @@ class MalaProfile : AppCompatActivity() {
             binding.skillleveldetailthree.text =
                 "+7 Dano de Arma por 10s após teletransporte com Manto Voador."
         }
-        binding.skillq.setOnClickListener {
+        binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Enchanter's Satchel"
             binding.skilldescription.text =
@@ -77,7 +77,7 @@ class MalaProfile : AppCompatActivity() {
             binding.skillleveldetailtwo.text = "+80 Danos"
             binding.skillleveldetailthree.text = "Aplica 40% de Taxa de Incêndio Lenta para 4s"
         }
-        binding.skillq.setOnClickListener {
+        binding.skillx.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Affliction"
             binding.skilldescription.text =

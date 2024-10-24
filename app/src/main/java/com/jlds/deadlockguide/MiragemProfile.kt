@@ -45,7 +45,7 @@ class MiragemProfile : AppCompatActivity() {
             binding.skillleveldetailtwo.text = "14 Recarga "
             binding.skillleveldetailthree.text = "+20% Chance de Evasão de Bala"
         }
-        binding.skillq.setOnClickListener {
+        binding.skille.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Fire Scarabs"
             binding.skilldescription.text =
@@ -60,7 +60,7 @@ class MiragemProfile : AppCompatActivity() {
             binding.skillleveldetailtwo.text = "15% Resistência à Bala"
             binding.skillleveldetailthree.text = "+70 Max Roubo de Saúde"
         }
-        binding.skillq.setOnClickListener {
+        binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Djinn's Mark"
             binding.skilldescription.text =
@@ -78,7 +78,7 @@ class MiragemProfile : AppCompatActivity() {
             binding.skillleveldetailthree.text =
                 "- 0.5s Recarga Entre Multiplicador e +4 Multiplicador Máximo"
         }
-        binding.skillq.setOnClickListener {
+        binding.skillx.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Traveler"
             binding.skilldescription.text =

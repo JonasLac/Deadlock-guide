@@ -22,7 +22,9 @@ class AdagaProfile : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
+        binding.iconlogoback.setOnClickListener {
+            finish()
+        }
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Serrated Knives"

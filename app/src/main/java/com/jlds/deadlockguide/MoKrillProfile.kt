@@ -46,7 +46,7 @@ class MoKrillProfile : AppCompatActivity() {
             binding.skillleveldetailthree.text =
                 "Adiciona um debuff aos inimigos que permite que Mo & Krill cause +15% de dano a eles. Empilha e dura 16s."
         }
-        binding.skillq.setOnClickListener {
+        binding.skille.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Burrow "
             binding.skilldescription.text =
@@ -61,7 +61,7 @@ class MoKrillProfile : AppCompatActivity() {
             binding.skillleveldetailtwo.text = "+140 Spin DPS e +2 Raio "
             binding.skillleveldetailthree.text = "-20 CD e +2m/s Velocidade de Movimento"
         }
-        binding.skillq.setOnClickListener {
+        binding.skillc.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Sand Blast"
             binding.skilldescription.text =
@@ -76,7 +76,7 @@ class MoKrillProfile : AppCompatActivity() {
             binding.skillleveldetailtwo.text = "recarga dos Anos 20"
             binding.skillleveldetailthree.text = "+Alvos lentos por -50%"
         }
-        binding.skillq.setOnClickListener {
+        binding.skillx.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE
             binding.skillselect.text = "Combo "
             binding.skilldescription.text =
