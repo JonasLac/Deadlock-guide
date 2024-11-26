@@ -3,10 +3,13 @@ package com.jlds.deadlockguide
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowInsetsController
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,7 +18,11 @@ import androidx.core.view.isVisible
 import com.example.myapp.R
 import com.example.myapp.databinding.ActivityMainBinding
 import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.FullScreenContentCallback
+import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.util.Locale
 
@@ -23,6 +30,9 @@ import java.util.Locale
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private var interstitialAd: InterstitialAd? = null
+    private lateinit var imageView: ImageView
+    private val handler = Handler(Looper.getMainLooper())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d("MainActivity", "onCreate chamado")
@@ -32,13 +42,13 @@ class MainActivity : AppCompatActivity() {
 
         enableEdgeToEdge()
         setContentView(binding.root)
+
         MobileAds.initialize(this)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         val textViewList = listOf(
             binding.layoutabrams,
             binding.layoutadaga,
@@ -63,7 +73,6 @@ class MainActivity : AppCompatActivity() {
             binding.layoutyamato,
             binding.layoutmiragem
         )
-
         binding.searchView.setOnQueryTextListener(object :
             android.widget.SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
@@ -82,19 +91,100 @@ class MainActivity : AppCompatActivity() {
         })
 
 
+
+
+            if (interstitialAd != null) {
+                interstitialAd?.show(this)
+                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
+                    override fun onAdDismissedFullScreenContent() {
+                        // Após o fechamento do anúncio, carregue outro
+                        loadInterstitialAd()
+                    }
+
+                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
+                        // Carregue outro anúncio se a exibição falhar
+                        loadInterstitialAd()
+                    }
+                }
+            } else {
+                // Caso o anúncio não esteja carregado, exiba uma mensagem ou carregue novamente
+                loadInterstitialAd()
+            }
+        }
+
+
+    // Método para carregar o anúncio intersticial
+    private fun loadInterstitialAd() {
+        val adRequest = AdRequest.Builder().build()
+
+        InterstitialAd.load(
+            this,
+            "ca-app-pub-2104181702379477/5920588311", // Substitua pelo seu ID de anúncio
+            adRequest,
+            object : InterstitialAdLoadCallback() {
+                override fun onAdLoaded(ad: InterstitialAd) {
+                    interstitialAd = ad
+                }
+
+                override fun onAdFailedToLoad(error: LoadAdError) {
+                    interstitialAd = null
+                }
+            }
+        )
+
+
         binding.layoutinfernos.setOnClickListener {
             startActivity(Intent(this, infernosProfile::class.java))
         }
         binding.layoutadaga.setOnClickListener {
+            if (interstitialAd != null) {
+                interstitialAd?.show(this)
+                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
+                    override fun onAdDismissedFullScreenContent() {
+                        loadInterstitialAd()
+                    }
+                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
+                        loadInterstitialAd()
+                    }
+                }
+            } else {
+                loadInterstitialAd()
+            }
             startActivity(Intent(this, AdagaProfile::class.java))
         }
         binding.layoutbebop.setOnClickListener {
             startActivity(Intent(this, BebopProfile::class.java))
         }
         binding.layoutbruma.setOnClickListener {
+            if (interstitialAd != null) {
+                interstitialAd?.show(this)
+                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
+                    override fun onAdDismissedFullScreenContent() {
+                        loadInterstitialAd()
+                    }
+                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
+                        loadInterstitialAd()
+                    }
+                }
+            } else {
+                loadInterstitialAd()
+            }
             startActivity(Intent(this, BrumaProlife::class.java))
         }
         binding.layoutespectra.setOnClickListener {
+            if (interstitialAd != null) {
+                interstitialAd?.show(this)
+                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
+                    override fun onAdDismissedFullScreenContent() {
+                        loadInterstitialAd()
+                    }
+                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
+                        loadInterstitialAd()
+                    }
+                }
+            } else {
+                loadInterstitialAd()
+            }
             startActivity(Intent(this, EspectraProfile::class.java))
         }
         binding.layoutgarracinza.setOnClickListener {
@@ -104,12 +194,38 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, GuardaProfile::class.java))
         }
         binding.layouthera.setOnClickListener {
+            if (interstitialAd != null) {
+                interstitialAd?.show(this)
+                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
+                    override fun onAdDismissedFullScreenContent() {
+                        loadInterstitialAd()
+                    }
+                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
+                        loadInterstitialAd()
+                    }
+                }
+            } else {
+                loadInterstitialAd()
+            }
             startActivity(Intent(this, HeraProfile::class.java))
         }
         binding.layoutkelvin.setOnClickListener {
             startActivity(Intent(this, KelvinProfile::class.java))
         }
         binding.layoutladygeist.setOnClickListener {
+            if (interstitialAd != null) {
+                interstitialAd?.show(this)
+                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
+                    override fun onAdDismissedFullScreenContent() {
+                        loadInterstitialAd()
+                    }
+                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
+                        loadInterstitialAd()
+                    }
+                }
+            } else {
+                loadInterstitialAd()
+            }
             startActivity(Intent(this, LadyProfile::class.java))
         }
         binding.layoutmala.setOnClickListener {
@@ -119,6 +235,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, McProfile::class.java))
         }
         binding.layoutmoekrill.setOnClickListener {
+            if (interstitialAd != null) {
+                interstitialAd?.show(this)
+                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
+                    override fun onAdDismissedFullScreenContent() {
+                        loadInterstitialAd()
+                    }
+                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
+                        loadInterstitialAd()
+                    }
+                }
+            } else {
+                loadInterstitialAd()
+            }
             startActivity(Intent(this, MoKrillProfile::class.java))
         }
         binding.layoutsete.setOnClickListener {
@@ -128,6 +257,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, ViscosoProfile::class.java))
         }
         binding.layoutparadoxa.setOnClickListener {
+            if (interstitialAd != null) {
+                interstitialAd?.show(this)
+                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
+                    override fun onAdDismissedFullScreenContent() {
+                        loadInterstitialAd()
+                    }
+                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
+                        loadInterstitialAd()
+                    }
+                }
+            } else {
+                loadInterstitialAd()
+            }
             startActivity(Intent(this, ParadoxaProfile::class.java))
         }
         binding.layoutdinamo.setOnClickListener {
@@ -137,6 +279,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, AbramsProfile::class.java))
         }
         binding.layoutvindicta.setOnClickListener {
+            if (interstitialAd != null) {
+                interstitialAd?.show(this)
+                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
+                    override fun onAdDismissedFullScreenContent() {
+                        loadInterstitialAd()
+                    }
+                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
+                        loadInterstitialAd()
+                    }
+                }
+            } else {
+                loadInterstitialAd()
+            }
             startActivity(Intent(this, VindictaProfile::class.java))
         }
         binding.layoutchico.setOnClickListener {
@@ -146,6 +301,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, YamatoProfile::class.java))
         }
         binding.layoutmiragem.setOnClickListener {
+            if (interstitialAd != null) {
+                interstitialAd?.show(this)
+                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
+                    override fun onAdDismissedFullScreenContent() {
+                        loadInterstitialAd()
+                    }
+                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
+                        loadInterstitialAd()
+                    }
+                }
+            } else {
+                loadInterstitialAd()
+            }
             startActivity(Intent(this, MiragemProfile::class.java))
         }
 
@@ -175,6 +343,7 @@ class MainActivity : AppCompatActivity() {
         binding.adViewone.loadAd(AdRequest.Builder().build())
         binding.adViewtwo.loadAd(AdRequest.Builder().build())
         binding.adViewthree.loadAd(AdRequest.Builder().build())
+        binding.adViewfor.loadAd(AdRequest.Builder().build())
         binding.adViewfor.loadAd(AdRequest.Builder().build())
         var lastClickTime = 0L
 

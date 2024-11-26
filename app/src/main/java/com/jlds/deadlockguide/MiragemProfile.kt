@@ -69,11 +69,9 @@ class MiragemProfile : AppCompatActivity() {
             binding.skillduration.text = "multiplicador Máximo 8X"
             binding.skilltime.text = "duração do Multiplicador 4.5S"
             binding.skilldetailone.text = "2s Revelar Duração"
-            binding.skilldetailtwo.text =
-                "Ativo: Consumir multiplicador da Marca de Djinn para causar dano agora."
+            binding.skilldetailtwo.text = "Ativo: Consumir\n multiplicador para causar dano."
             binding.skilldetailthree.text = ""
-            binding.skillleveldetail.text =
-                "Aplique 80% Lento por 0,5s sempre que o multiplicador for 2x ou superior"
+            binding.skillleveldetail.text = "Aplique 80% Lento por 0,5s "
             binding.skillleveldetailtwo.text = "+4s Duração do Multiplicador e +10 Dano Base"
             binding.skillleveldetailthree.text =
                 "- 0.5s Recarga Entre Multiplicador e +4 Multiplicador Máximo"

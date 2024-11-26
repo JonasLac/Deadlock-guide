@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/black"
-    tools:context=".BuildMain">
+    tools:context="com.jlds.deadlockguide.BuildMain">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nested_scroll_view"
@@ -508,13 +508,17 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navbuild"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
         android:layout_gravity="bottom"
         android:layout_margin="10sp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bottom_nav_background_ad"
         app:itemBackground="@drawable/ripple"
         app:itemIconTint="@color/black"
         app:itemTextColor="@color/black"
-        android:background="@drawable/bottom_nav_background_ad"
+        android:elevation="8dp"
         app:menu="@menu/bottom_navigation_menu" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
