@@ -6,7 +6,9 @@ import android.os.Bundle
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowInsetsController
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -101,5 +103,32 @@ class BuildMainEsp : AppCompatActivity() {
 
         }
         hideSystemUI()
+
+         fun showCustomDialog(imageRes: Int, text: String) {
+            // Infla o layout personalizado
+            val itemDialog = layoutInflater.inflate(R.layout.dialogtest, null)
+
+            // Configura o texto e a imagem no layout do diálogo
+            val dialogImageView = itemDialog.findViewById<ImageView>(R.id.itemImg)
+
+            dialogImageView.setImageResource(imageRes) // Define a imagem
+
+            // Cria e exibe o AlertDialog
+            val dialog = AlertDialog.Builder(this)
+                .setView(itemDialog)
+                .create()
+
+            dialog.show()
+        }
+
+
+        binding.catadorDeBalas.setOnClickListener {
+            showCustomDialog(
+                imageRes = R.drawable.apcatadordebalas, // Imagem específica para o item
+                text = "Texto específico para o elemento 1"
+            )
+        }
+
+
     }
 }

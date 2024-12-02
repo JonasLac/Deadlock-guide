@@ -11,6 +11,7 @@ import android.view.WindowInsets
 import android.view.WindowInsetsController
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
     private var interstitialAd: InterstitialAd? = null
     private lateinit var imageView: ImageView
     private val handler = Handler(Looper.getMainLooper())
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d("MainActivity", "onCreate chamado")
@@ -380,6 +382,17 @@ class MainActivity : AppCompatActivity() {
         for (i in 0 until bottomNavigationView.menu.size()) {
             bottomNavigationView.menu.getItem(i).isChecked = false
         }
+
+        val dialogsurto = layoutInflater.inflate(R.layout.dialogtest, null)
+
+        val dialog = AlertDialog.Builder(this)
+            .setView(dialogsurto) // Define o layout personalizado
+            .create()
+
+        dialog.show()
+
+
+
     }
 }
 

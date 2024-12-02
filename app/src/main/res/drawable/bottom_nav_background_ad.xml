@@ -6,6 +6,7 @@
 
     <corners android:radius="16dp" />
     <stroke
+        android:padding="10sp"
         android:width="3dp"
         android:dashGap="@dimen/material_emphasis_medium"
         android:color="@color/black" />
