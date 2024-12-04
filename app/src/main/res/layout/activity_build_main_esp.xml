@@ -80,18 +80,21 @@
                         android:src="@drawable/apcatadordebalas" />
 
                     <ImageView
+                        android:id="@+id/cargaAdicional"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/apcargaadicional" />
 
                     <ImageView
+                        android:id="@+id/espiritoAdicional"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/apespiritoadicional" />
 
                     <ImageView
+                        android:id="@+id/explosaoMistica"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -105,18 +108,21 @@
                     android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/dominioMistico"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/apdominiomistico" />
 
                     <ImageView
+                        android:id="@+id/golpeEspiritual"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/apgolpeespiritual" />
 
                     <ImageView
+                        android:id="@+id/infusor"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"

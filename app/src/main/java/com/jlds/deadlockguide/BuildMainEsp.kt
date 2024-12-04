@@ -7,6 +7,7 @@ import android.view.View
 import android.view.WindowInsets
 import android.view.WindowInsetsController
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -104,30 +105,156 @@ class BuildMainEsp : AppCompatActivity() {
         }
         hideSystemUI()
 
-         fun showCustomDialog(imageRes: Int, text: String) {
-            // Infla o layout personalizado
-            val itemDialog = layoutInflater.inflate(R.layout.dialogtest, null)
-
-            // Configura o texto e a imagem no layout do diálogo
-            val dialogImageView = itemDialog.findViewById<ImageView>(R.id.itemImg)
-
-            dialogImageView.setImageResource(imageRes) // Define a imagem
-
-            // Cria e exibe o AlertDialog
-            val dialog = AlertDialog.Builder(this)
-                .setView(itemDialog)
+        fun mostraDialog(imageRes: Int, text: String) {
+            val dialogCostumizado = layoutInflater.inflate(R.layout.dialogtest,null)
+            val imgItem = dialogCostumizado.findViewById<ImageView>(R.id.itemImg)
+            val dialogTextView = dialogCostumizado.findViewById<TextView>(R.id.itemNome)
+            imgItem.setImageResource(imageRes)
+            dialogTextView.text = text
+            val mostraDialog = AlertDialog.Builder(this)
+                .setView(dialogCostumizado)
                 .create()
 
-            dialog.show()
+            mostraDialog.show()
         }
+
+        fun dialogSmall(
+            imageRes: Int,
+            text: String,
+            valorText: String,
+            detailsOneText: String,
+            detailsTwoText: String,
+            detailsThreeText: String,
+            componentText: String
+        ) {
+            val dialogCostumizado = layoutInflater.inflate(R.layout.dialogpeq, null)
+            val imgItem = dialogCostumizado.findViewById<ImageView>(R.id.itemImg)
+            val dialogTextView = dialogCostumizado.findViewById<TextView>(R.id.itemNome)
+            val valor = dialogCostumizado.findViewById<TextView>(R.id.valorItem)
+            val detailsOne = dialogCostumizado.findViewById<TextView>(R.id.detalhesOne)
+            val detailsTwo = dialogCostumizado.findViewById<TextView>(R.id.detalhesTwo)
+            val detailsThree = dialogCostumizado.findViewById<TextView>(R.id.detalhesThree)
+            val component = dialogCostumizado.findViewById<TextView>(R.id.componte)
+
+            imgItem.setImageResource(imageRes)
+            dialogTextView.text = text
+            valor.text = valorText
+            detailsOne.text = detailsOneText
+            detailsTwo.text = detailsTwoText
+            detailsThree.text = detailsThreeText
+            component.text = componentText
+
+            val mostraDialog = AlertDialog.Builder(this)
+                .setView(dialogCostumizado)
+                .create()
+
+            mostraDialog.show()
+        }
+
+        /* TEMPLATE DA FUNÇÃO
+        binding.catadorDeBalas.setOnClickListener {
+            dialogSmall(
+                imageRes = R.drawable.apcatadordebalas,
+                text = "",
+                valorText = "",
+                detailsOneText = "",
+                detailsTwoText = "",
+                detailsThreeText = "",
+                componentText = ""
+            )
+        }
+        */
 
 
         binding.catadorDeBalas.setOnClickListener {
-            showCustomDialog(
-                imageRes = R.drawable.apcatadordebalas, // Imagem específica para o item
-                text = "Texto específico para o elemento 1"
+            dialogSmall(
+                imageRes = R.drawable.apcatadordebalas,
+                text = "Catador de Balas",
+                valorText = "500",
+                detailsOneText = "detalhes1",
+                detailsTwoText = "detalhes2",
+                detailsThreeText = "detalhes3",
+                componentText = "catador"
             )
         }
+        binding.cargaAdicional.setOnClickListener {
+            dialogSmall(
+                imageRes = R.drawable.apcargaadicional,
+                text = "Catador de Balas",
+                valorText = "500",
+                detailsOneText = "detalhes1",
+                detailsTwoText = "detalhes2",
+                detailsThreeText = "detalhes3",
+                componentText = "catador"
+            )
+        }
+        binding.cargaAdicional.setOnClickListener {
+            dialogSmall(
+                imageRes = R.drawable.apcargaadicional,
+                text = "Catador de Balas",
+                valorText = "500",
+                detailsOneText = "detalhes1",
+                detailsTwoText = "detalhes2",
+                detailsThreeText = "detalhes3",
+                componentText = "catador"
+            )
+        }
+        binding.espiritoAdicional.setOnClickListener {
+            dialogSmall(
+                imageRes = R.drawable.apespiritoadicional,
+                text = "Catador de Balas",
+                valorText = "500",
+                detailsOneText = "detalhes1",
+                detailsTwoText = "detalhes2",
+                detailsThreeText = "detalhes3",
+                componentText = "catador"
+            )
+        }
+        binding.explosaoMistica.setOnClickListener {
+            dialogSmall(
+                imageRes = R.drawable.apexplosaomistica,
+                text = "Catador de Balas",
+                valorText = "500",
+                detailsOneText = "detalhes1",
+                detailsTwoText = "detalhes2",
+                detailsThreeText = "detalhes3",
+                componentText = "catador"
+            )
+        }
+        binding.dominioMistico.setOnClickListener {
+            dialogSmall(
+                imageRes = R.drawable.apdominiomistico,
+                text = "Catador de Balas",
+                valorText = "500",
+                detailsOneText = "detalhes1",
+                detailsTwoText = "detalhes2",
+                detailsThreeText = "detalhes3",
+                componentText = "catador"
+            )
+        }
+        binding.golpeEspiritual.setOnClickListener {
+            dialogSmall(
+                imageRes = R.drawable.apgolpeespiritual,
+                text = "Catador de Balas",
+                valorText = "500",
+                detailsOneText = "detalhes1",
+                detailsTwoText = "detalhes2",
+                detailsThreeText = "detalhes3",
+                componentText = "catador"
+            )
+        }
+        binding.infusor.setOnClickListener {
+            dialogSmall(
+                imageRes = R.drawable.apinfusao,
+                text = "Catador de Balas",
+                valorText = "500",
+                detailsOneText = "detalhes1",
+                detailsTwoText = "detalhes2",
+                detailsThreeText = "detalhes3",
+                componentText = "catador"
+            )
+        }
+
 
 
     }

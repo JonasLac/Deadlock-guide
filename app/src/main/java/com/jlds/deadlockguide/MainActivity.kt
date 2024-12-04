@@ -34,7 +34,22 @@ class MainActivity : AppCompatActivity() {
     private var interstitialAd: InterstitialAd? = null
     private lateinit var imageView: ImageView
     private val handler = Handler(Looper.getMainLooper())
+    fun showCustomDialog(imageRes: Int, text: String) {
+        // Infla o layout personalizado
+        val itemDialog = layoutInflater.inflate(R.layout.dialogtest, null)
 
+        // Configura o texto e a imagem no layout do diálogo
+        val dialogImageView = itemDialog.findViewById<ImageView>(R.id.itemImg)
+
+        dialogImageView.setImageResource(imageRes) // Define a imagem
+
+        // Cria e exibe o AlertDialog
+        val dialog = AlertDialog.Builder(this)
+            .setView(itemDialog)
+            .create()
+
+        dialog.show()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d("MainActivity", "onCreate chamado")
