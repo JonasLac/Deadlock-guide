@@ -7,6 +7,7 @@ import android.view.View
 import android.view.WindowInsets
 import android.view.WindowInsetsController
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
@@ -44,11 +45,13 @@ class BuildMainEsp : AppCompatActivity() {
             when (item.itemId) {
                 R.id.navarm -> {
                     startActivity(Intent(this, BuildMain::class.java))
+                    finish()
                     true
                 }
 
                 R.id.navvit -> {
                     startActivity(Intent(this, BuildMainVd::class.java))
+                    finish()
                     true
                 }
 
@@ -125,7 +128,9 @@ class BuildMainEsp : AppCompatActivity() {
             detailsOneText: String,
             detailsTwoText: String,
             detailsThreeText: String,
-            componentText: String
+            componentText: String,
+            ativa: Boolean,
+            infoAtiva: Boolean
         ) {
             val dialogCostumizado = layoutInflater.inflate(R.layout.dialogpeq, null)
             val imgItem = dialogCostumizado.findViewById<ImageView>(R.id.itemImg)
@@ -135,6 +140,9 @@ class BuildMainEsp : AppCompatActivity() {
             val detailsTwo = dialogCostumizado.findViewById<TextView>(R.id.detalhesTwo)
             val detailsThree = dialogCostumizado.findViewById<TextView>(R.id.detalhesThree)
             val component = dialogCostumizado.findViewById<TextView>(R.id.componte)
+            val ativaLayout = dialogCostumizado.findViewById<LinearLayout>(R.id.ativo)
+            val infoLayout = dialogCostumizado.findViewById<LinearLayout>(R.id.layoutInfos)
+
 
             imgItem.setImageResource(imageRes)
             dialogTextView.text = text
@@ -144,12 +152,24 @@ class BuildMainEsp : AppCompatActivity() {
             detailsThree.text = detailsThreeText
             component.text = componentText
 
+            if (ativa) {
+                ativaLayout.visibility = View.GONE
+            } else {
+                ativaLayout.visibility = View.VISIBLE
+            }
+            if (infoAtiva) {
+                infoLayout.visibility = View.GONE
+            } else {
+                infoLayout.visibility = View.VISIBLE
+            }
+
             val mostraDialog = AlertDialog.Builder(this)
                 .setView(dialogCostumizado)
                 .create()
 
             mostraDialog.show()
         }
+
 
         /* TEMPLATE DA FUNÇÃO
         binding.catadorDeBalas.setOnClickListener {
@@ -167,14 +187,18 @@ class BuildMainEsp : AppCompatActivity() {
 
 
         binding.catadorDeBalas.setOnClickListener {
+
             dialogSmall(
-                imageRes = R.drawable.apcatadordebalas,
+                imageRes = R.drawable.dialogimgcatadordebalas,
                 text = "Catador de Balas",
-                valorText = "500",
-                detailsOneText = "detalhes1",
-                detailsTwoText = "detalhes2",
-                detailsThreeText = "detalhes3",
-                componentText = "catador"
+                valorText = "500 Almas",
+                detailsOneText = "15 munição",
+                detailsTwoText = "40 vida adicional",
+                detailsThreeText = "Sempre que garantir ou negar um orbe de almas, você recebe a munição de volta e ganha poder espiritual acumulável.\n" +
+                        "quando tiver o máximo de acumulo, ganha velocidade de corrida adicional\n",
+                componentText = "catador",
+                ativa = true,
+                infoAtiva = true
             )
         }
         binding.cargaAdicional.setOnClickListener {
@@ -185,7 +209,10 @@ class BuildMainEsp : AppCompatActivity() {
                 detailsOneText = "detalhes1",
                 detailsTwoText = "detalhes2",
                 detailsThreeText = "detalhes3",
-                componentText = "catador"
+                componentText = "catador",
+                ativa = true,
+                infoAtiva = true
+
             )
         }
         binding.cargaAdicional.setOnClickListener {
@@ -196,7 +223,10 @@ class BuildMainEsp : AppCompatActivity() {
                 detailsOneText = "detalhes1",
                 detailsTwoText = "detalhes2",
                 detailsThreeText = "detalhes3",
-                componentText = "catador"
+                componentText = "catador",
+                ativa = true,
+                infoAtiva = true
+
             )
         }
         binding.espiritoAdicional.setOnClickListener {
@@ -207,7 +237,10 @@ class BuildMainEsp : AppCompatActivity() {
                 detailsOneText = "detalhes1",
                 detailsTwoText = "detalhes2",
                 detailsThreeText = "detalhes3",
-                componentText = "catador"
+                componentText = "catador",
+                ativa = true,
+                infoAtiva = true
+
             )
         }
         binding.explosaoMistica.setOnClickListener {
@@ -218,7 +251,10 @@ class BuildMainEsp : AppCompatActivity() {
                 detailsOneText = "detalhes1",
                 detailsTwoText = "detalhes2",
                 detailsThreeText = "detalhes3",
-                componentText = "catador"
+                componentText = "catador",
+                ativa = true,
+                infoAtiva = true
+
             )
         }
         binding.dominioMistico.setOnClickListener {
@@ -229,7 +265,10 @@ class BuildMainEsp : AppCompatActivity() {
                 detailsOneText = "detalhes1",
                 detailsTwoText = "detalhes2",
                 detailsThreeText = "detalhes3",
-                componentText = "catador"
+                componentText = "catador",
+                ativa = true,
+                infoAtiva = true
+
             )
         }
         binding.golpeEspiritual.setOnClickListener {
@@ -240,7 +279,10 @@ class BuildMainEsp : AppCompatActivity() {
                 detailsOneText = "detalhes1",
                 detailsTwoText = "detalhes2",
                 detailsThreeText = "detalhes3",
-                componentText = "catador"
+                componentText = "catador",
+                ativa = true,
+                infoAtiva = true
+
             )
         }
         binding.infusor.setOnClickListener {
@@ -251,7 +293,10 @@ class BuildMainEsp : AppCompatActivity() {
                 detailsOneText = "detalhes1",
                 detailsTwoText = "detalhes2",
                 detailsThreeText = "detalhes3",
-                componentText = "catador"
+                componentText = "catador",
+                ativa = false,
+                infoAtiva = true
+
             )
         }
 

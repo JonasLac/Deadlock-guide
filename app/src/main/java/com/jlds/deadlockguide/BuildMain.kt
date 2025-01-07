@@ -6,7 +6,11 @@ import android.os.Bundle
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowInsetsController
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -60,11 +64,13 @@ class BuildMain : AppCompatActivity() {
 
                 R.id.navvit -> {
                     startActivity(Intent(this, BuildMainVd::class.java))
+                    finish()
                     true
                 }
 
                 R.id.navesp -> {
                     startActivity(Intent(this, BuildMainEsp::class.java))
+                    finish()
                     true
                 }
 
@@ -104,5 +110,115 @@ class BuildMain : AppCompatActivity() {
 
         }
         hideSystemUI()
+
+
+        fun dialogSmall(
+            imageRes: Int,
+            text: String,
+            valorText: String,
+            detailsOneText: String,
+            detailsTwoText: String,
+            detailsThreeText: String,
+            componentText: String,
+            ativa: Boolean,
+            textPass: String,
+            imgcomp: Int,
+            infoAtiva: Boolean
+        ) {
+            val dialogCostumizado = layoutInflater.inflate(R.layout.dialogad, null)
+            val imgItem = dialogCostumizado.findViewById<ImageView>(R.id.itemImg)
+            val dialogTextView = dialogCostumizado.findViewById<TextView>(R.id.itemNome)
+            val valor = dialogCostumizado.findViewById<TextView>(R.id.valorItem)
+            val detailsOne = dialogCostumizado.findViewById<TextView>(R.id.detalhesOne)
+            val detailsTwo = dialogCostumizado.findViewById<TextView>(R.id.detalhesTwo)
+            val detailsThree = dialogCostumizado.findViewById<TextView>(R.id.detalhesThree)
+            val component = dialogCostumizado.findViewById<TextView>(R.id.componte)
+            val imgComp = dialogCostumizado.findViewById<ImageView>(R.id.componenteimg)
+            val ativaLayout = dialogCostumizado.findViewById<LinearLayout>(R.id.ativo)
+            val layoutPass = dialogCostumizado.findViewById<LinearLayout>(R.id.layoutPassiva)
+            val textPass = dialogCostumizado.findViewById<TextView>(R.id.textPassiva)
+            val infoLayout = dialogCostumizado.findViewById<LinearLayout>(R.id.layoutInfos)
+
+
+            imgItem.setImageResource(imageRes)
+            imgComp.setImageResource(imageRes)
+            dialogTextView.text = text
+            valor.text = valorText
+            detailsOne.text = detailsOneText
+            detailsTwo.text = detailsTwoText
+            detailsThree.text = detailsThreeText
+            component.text = componentText
+
+
+            if (ativa) {
+                ativaLayout.visibility = View.GONE
+                layoutPass.visibility = View.GONE
+            } else {
+                ativaLayout.visibility = View.VISIBLE
+            }
+            if (infoAtiva) {
+                infoLayout.visibility = View.GONE
+            } else {
+                infoLayout.visibility = View.VISIBLE
+            }
+
+            val mostraDialog = AlertDialog.Builder(this)
+                .setView(dialogCostumizado)
+                .create()
+
+            mostraDialog.show()
+        }
+
+        /*
+        TEMPLATE
+        binding.catadorDeBalas.setOnClickListener {
+            dialogSmall(
+                imageRes = R.drawable.apcatadordebalas,
+                text = "",
+                valorText = "",
+                detailsOneText = "",
+                detailsTwoText = "",
+                detailsThreeText = "",
+                componentText = "",
+                ativa = false,
+                textPass = "',
+                imgcomp = R.drawable.adcartuchotitanico,
+                infoAtiva = true
+            )
+        }
+        */
+
+        binding.cartuchobasico.setOnClickListener {
+            dialogSmall(
+                imageRes = R.drawable.adcartuchobasico,
+                text = "Cartucho Basico",
+                valorText = "500",
+                detailsOneText = "+26% Munição",
+                detailsTwoText = "+12% Dano de Arma",
+                detailsThreeText = "detalhes3",
+                componentText = "Revista Titanic",
+                ativa = false,
+                textPass = "Na",
+                imgcomp = R.drawable.adcartuchotitanico,
+                infoAtiva = true
+            )
+        }
+        binding.caraacara.setOnClickListener {
+            dialogSmall(
+                imageRes = R.drawable.adcaraacara,
+                text = "",
+                valorText = "",
+                detailsOneText = "+4% Resistência à bala",
+                detailsTwoText = "+22% Dano de Arma Condicional",
+                detailsThreeText = "",
+                componentText = "Ponto Em Branco",
+                ativa = false,
+                textPass = "Na",
+                imgcomp = R.drawable.adcartuchotitanico,
+                infoAtiva = true
+            )
+        }
+
+
     }
 }

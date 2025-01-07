@@ -12,6 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical">
 
 
@@ -364,6 +365,12 @@
 
 
         </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300sp"
+            android:layout_gravity="center"
+            android:src="@drawable/fanartdinamo"/>
 
         <LinearLayout
             android:layout_width="match_parent"

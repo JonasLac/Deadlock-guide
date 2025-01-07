@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/dialogpeq"
+    android:id="@+id/dialogvd"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -18,7 +18,7 @@
             android:layout_height="150sp"
             android:orientation="horizontal"
             android:gravity="center"
-            android:background="@color/apCorItem"
+            android:background="@color/vdPrimaria"
             android:padding="10sp"
             >
             <LinearLayout
@@ -53,13 +53,13 @@
                     android:id="@+id/itemImg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/apsurtodepoder"/>
+                    android:src="@drawable/vdvidaadicional"/>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/apClaro"
+            android:background="@color/vdSegundaria"
             android:orientation="vertical"
             android:padding="10sp">
             <TextView
@@ -95,6 +95,10 @@
                 />
         </LinearLayout>
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3sp"
+            android:background="@color/black"/>
+        <LinearLayout
             android:id="@+id/ativo"
             android:visibility="visible"
             android:layout_width="match_parent"
@@ -103,13 +107,13 @@
             <LinearLayout
                 android:layout_width="321sp"
                 android:layout_height="30sp"
-                android:background="@color/apMaisEscuro">
+                android:background="@color/vdTerceira">
                 <TextView
                     android:id="@+id/time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10sp"
-                    android:text="Ativa"
+                    android:text="Passiva"
                     android:fontFamily="@font/abril_fatface"
                     android:textColor="@color/white"
                     android:textSize="20sp"/>
@@ -134,29 +138,68 @@
 
         </LinearLayout>
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3sp"
+            android:background="@color/black"/>
+        <LinearLayout
+            android:id="@+id/layoutPassiva"
+            android:visibility="visible"
+            android:background="@color/vdTerceira"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/textPassiva"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/corGamePadrao"
+                android:text="text"
+                android:layout_margin="10sp"
+                android:textSize="15sp"
+                android:fontFamily="@font/abril_fatface"/>
+        </LinearLayout>
+        <LinearLayout
             android:visibility="visible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#633584"
-            android:orientation="vertical"
+            android:background="@color/vdPrimaria"
+            android:orientation="horizontal"
             android:padding="10sp">
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Componente de:"
-                android:fontFamily="@font/abril_fatface"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                />
-            <TextView
-                android:id="@+id/componte"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/abril_fatface"
-                android:text="Detalhes"
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                />
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Componente de:"
+                    android:fontFamily="@font/abril_fatface"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:id="@+id/componte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="Detalhes"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20sp"
+                android:gravity="end">
+                <ImageView
+                    android:id="@+id/componenteimg"
+                    android:layout_marginTop="5sp"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:src="@drawable/admincartuchotitanico"/>
+            </LinearLayout>
+
         </LinearLayout>
         <LinearLayout
             android:id="@+id/layoutInfos"
@@ -165,7 +208,7 @@
             android:layout_height="200sp"
             android:gravity="center"
             android:orientation="vertical"
-            android:background="@color/apClaro">
+            android:background="@color/vdSegundaria">
             <LinearLayout
                 android:id="@+id/layoutOne"
                 android:layout_marginBottom="10sp"
@@ -173,7 +216,7 @@
                 android:visibility="visible"
                 android:layout_width="350sp"
                 android:layout_height="30sp"
-                android:background="@color/apEscuro">
+                android:background="@color/adsla">
                 <TextView
                     android:gravity="center"
                     android:layout_width="match_parent"
@@ -190,7 +233,7 @@
                 android:visibility="visible"
                 android:layout_width="350sp"
                 android:layout_height="30sp"
-                android:background="@color/apEscuro">
+                android:background="@color/adsla">
                 <TextView
                     android:gravity="center"
                     android:layout_width="match_parent"
@@ -207,7 +250,7 @@
                 android:visibility="visible"
                 android:layout_width="350sp"
                 android:layout_height="30sp"
-                android:background="@color/apEscuro">
+                android:background="@color/adsla">
                 <TextView
                     android:gravity="center"
                     android:layout_width="match_parent"
@@ -223,7 +266,7 @@
                 android:visibility="visible"
                 android:layout_width="350sp"
                 android:layout_height="30sp"
-                android:background="@color/apEscuro">
+                android:background="@color/adsla">
                 <TextView
                     android:gravity="center"
                     android:layout_width="match_parent"

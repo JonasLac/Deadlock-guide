@@ -32,7 +32,7 @@ class StartActivity : AppCompatActivity() {
                 startActivity(intent)
                 finish()
             }
-        }, 1000)
+        }, 2500)
         fun hideSystemUI() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
                 window.setDecorFitsSystemWindows(false)

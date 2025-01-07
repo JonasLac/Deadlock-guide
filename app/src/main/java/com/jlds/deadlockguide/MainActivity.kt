@@ -154,54 +154,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, infernosProfile::class.java))
         }
         binding.layoutadaga.setOnClickListener {
-            if (interstitialAd != null) {
-                interstitialAd?.show(this)
-                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
-                    override fun onAdDismissedFullScreenContent() {
-                        loadInterstitialAd()
-                    }
-                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
-                        loadInterstitialAd()
-                    }
-                }
-            } else {
-                loadInterstitialAd()
-            }
             startActivity(Intent(this, AdagaProfile::class.java))
         }
         binding.layoutbebop.setOnClickListener {
             startActivity(Intent(this, BebopProfile::class.java))
         }
         binding.layoutbruma.setOnClickListener {
-            if (interstitialAd != null) {
-                interstitialAd?.show(this)
-                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
-                    override fun onAdDismissedFullScreenContent() {
-                        loadInterstitialAd()
-                    }
-                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
-                        loadInterstitialAd()
-                    }
-                }
-            } else {
-                loadInterstitialAd()
-            }
+
             startActivity(Intent(this, BrumaProlife::class.java))
         }
         binding.layoutespectra.setOnClickListener {
-            if (interstitialAd != null) {
-                interstitialAd?.show(this)
-                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
-                    override fun onAdDismissedFullScreenContent() {
-                        loadInterstitialAd()
-                    }
-                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
-                        loadInterstitialAd()
-                    }
-                }
-            } else {
-                loadInterstitialAd()
-            }
             startActivity(Intent(this, EspectraProfile::class.java))
         }
         binding.layoutgarracinza.setOnClickListener {
@@ -211,38 +173,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, GuardaProfile::class.java))
         }
         binding.layouthera.setOnClickListener {
-            if (interstitialAd != null) {
-                interstitialAd?.show(this)
-                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
-                    override fun onAdDismissedFullScreenContent() {
-                        loadInterstitialAd()
-                    }
-                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
-                        loadInterstitialAd()
-                    }
-                }
-            } else {
-                loadInterstitialAd()
-            }
             startActivity(Intent(this, HeraProfile::class.java))
         }
         binding.layoutkelvin.setOnClickListener {
             startActivity(Intent(this, KelvinProfile::class.java))
         }
         binding.layoutladygeist.setOnClickListener {
-            if (interstitialAd != null) {
-                interstitialAd?.show(this)
-                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
-                    override fun onAdDismissedFullScreenContent() {
-                        loadInterstitialAd()
-                    }
-                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
-                        loadInterstitialAd()
-                    }
-                }
-            } else {
-                loadInterstitialAd()
-            }
+
             startActivity(Intent(this, LadyProfile::class.java))
         }
         binding.layoutmala.setOnClickListener {
@@ -252,19 +189,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, McProfile::class.java))
         }
         binding.layoutmoekrill.setOnClickListener {
-            if (interstitialAd != null) {
-                interstitialAd?.show(this)
-                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
-                    override fun onAdDismissedFullScreenContent() {
-                        loadInterstitialAd()
-                    }
-                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
-                        loadInterstitialAd()
-                    }
-                }
-            } else {
-                loadInterstitialAd()
-            }
+
             startActivity(Intent(this, MoKrillProfile::class.java))
         }
         binding.layoutsete.setOnClickListener {
@@ -274,19 +199,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, ViscosoProfile::class.java))
         }
         binding.layoutparadoxa.setOnClickListener {
-            if (interstitialAd != null) {
-                interstitialAd?.show(this)
-                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
-                    override fun onAdDismissedFullScreenContent() {
-                        loadInterstitialAd()
-                    }
-                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
-                        loadInterstitialAd()
-                    }
-                }
-            } else {
-                loadInterstitialAd()
-            }
+
             startActivity(Intent(this, ParadoxaProfile::class.java))
         }
         binding.layoutdinamo.setOnClickListener {
@@ -296,19 +209,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, AbramsProfile::class.java))
         }
         binding.layoutvindicta.setOnClickListener {
-            if (interstitialAd != null) {
-                interstitialAd?.show(this)
-                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
-                    override fun onAdDismissedFullScreenContent() {
-                        loadInterstitialAd()
-                    }
-                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
-                        loadInterstitialAd()
-                    }
-                }
-            } else {
-                loadInterstitialAd()
-            }
+
             startActivity(Intent(this, VindictaProfile::class.java))
         }
         binding.layoutchico.setOnClickListener {
@@ -318,19 +219,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, YamatoProfile::class.java))
         }
         binding.layoutmiragem.setOnClickListener {
-            if (interstitialAd != null) {
-                interstitialAd?.show(this)
-                interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
-                    override fun onAdDismissedFullScreenContent() {
-                        loadInterstitialAd()
-                    }
-                    override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
-                        loadInterstitialAd()
-                    }
-                }
-            } else {
-                loadInterstitialAd()
-            }
             startActivity(Intent(this, MiragemProfile::class.java))
         }
 
@@ -376,14 +264,53 @@ class MainActivity : AppCompatActivity() {
                 lastClickTime = System.currentTimeMillis()
                 when (item.itemId) {
                     R.id.navarm -> {
+                        if (interstitialAd != null) {
+                            interstitialAd?.show(this)
+                            interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
+                                override fun onAdDismissedFullScreenContent() {
+                                    loadInterstitialAd()
+                                }
+                                override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
+                                    loadInterstitialAd()
+                                }
+                            }
+                        } else {
+                            loadInterstitialAd()
+                        }
                         startActivity(Intent(this, BuildMain::class.java))
                         true
                     }
                     R.id.navvit -> {
+                        if (interstitialAd != null) {
+                            interstitialAd?.show(this)
+                            interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
+                                override fun onAdDismissedFullScreenContent() {
+                                    loadInterstitialAd()
+                                }
+                                override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
+                                    loadInterstitialAd()
+                                }
+                            }
+                        } else {
+                            loadInterstitialAd()
+                        }
                         startActivity(Intent(this, BuildMainVd::class.java))
                         true
                     }
                     R.id.navesp -> {
+                        if (interstitialAd != null) {
+                            interstitialAd?.show(this)
+                            interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
+                                override fun onAdDismissedFullScreenContent() {
+                                    loadInterstitialAd()
+                                }
+                                override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
+                                    loadInterstitialAd()
+                                }
+                            }
+                        } else {
+                            loadInterstitialAd()
+                        }
                         startActivity(Intent(this, BuildMainEsp::class.java))
                         true
                     }
@@ -398,13 +325,6 @@ class MainActivity : AppCompatActivity() {
             bottomNavigationView.menu.getItem(i).isChecked = false
         }
 
-        val dialogsurto = layoutInflater.inflate(R.layout.dialogtest, null)
-
-        val dialog = AlertDialog.Builder(this)
-            .setView(dialogsurto) // Define o layout personalizado
-            .create()
-
-        dialog.show()
 
 
 

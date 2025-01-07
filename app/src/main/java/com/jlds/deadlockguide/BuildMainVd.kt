@@ -40,6 +40,7 @@ class BuildMainVd : AppCompatActivity() {
             when (item.itemId) {
                 R.id.navarm -> {
                     startActivity(Intent(this, BuildMain::class.java))
+                    finish()
                     true
                 }
 
@@ -49,6 +50,7 @@ class BuildMainVd : AppCompatActivity() {
 
                 R.id.navesp -> {
                     startActivity(Intent(this, BuildMainEsp::class.java))
+                    finish()
                     true
                 }
 

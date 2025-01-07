@@ -82,9 +82,19 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
+                    android:text="Todas as classes e dificuldades foram definidas pelo newba do dev"
+                    android:fontFamily="@font/abril_fatface"
+                    android:textSize="15sp"
+                    android:textColor="#575757"
+                    android:gravity="center"/>
 
 
             </LinearLayout>
@@ -1275,6 +1285,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="50sp"
+                    android:layout_marginBottom="10sp"
                     android:gravity="center"
                     android:layout_gravity="center">
                     <com.google.android.gms.ads.AdView

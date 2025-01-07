@@ -47,6 +47,12 @@
                 android:fontFamily="@font/abril_fatface"
                 android:textColor="#828282" />
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300sp"
+                android:src="@drawable/fanfartviscoso"/>
+
+
             <LinearLayout
                 android:id="@+id/buildadone"
                 android:layout_width="match_parent"
@@ -73,24 +79,28 @@
                     android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/cartuchobasico"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adcartuchobasico" />
 
                     <ImageView
+                        android:id="@+id/caraacara"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adcaraacara" />
 
                     <ImageView
+                        android:id="@+id/tiroreforcadonacabeca"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adtiroreforcadonacabeca" />
 
                     <ImageView
+                        android:id="@+id/cartuchodealtavelocidade"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -105,24 +115,28 @@
                     android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/baladepontaoca"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adbaladepontaoca" />
 
                     <ImageView
+                        android:id="@+id/municaomatamonstros"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/admunicaomatamonstros" />
 
                     <ImageView
+                        android:id="@+id/balasrapidas"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/adbalasrapidas" />
 
                     <ImageView
+                        android:id="@+id/disparorestaurador"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"

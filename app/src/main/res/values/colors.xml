@@ -2,4 +2,21 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="corGamePadrao">#F6DEBE</color>
+    <color name="apCorItem">#c288f0</color>
+    <color name="apClaro">#8b56b4</color>
+    <color name="apEscuro">#623585</color>
+    <color name="apMaisEscuro">#3b2250</color>
+    <color name="adItem">#E58E34</color>
+    <color name="apInfo">#4e296b</color>
+    <color name="adPrimaria">#C87A02</color>
+    <color name="adSegundaria">#80540E</color>
+    <color name="adTerceira">#583A0F</color>
+    <color name="adsla">#67420B</color>
+    <color name="vdPrimaria">#75B01D</color>
+    <color name="vdSegundaria">#4C7215</color>
+    <color name="vdTerceira">#354F11</color>
+    <color name="vdSla">#659818</color>
+
+
 </resources>
