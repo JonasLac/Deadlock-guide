@@ -24,6 +24,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="20sp"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/itemNome"
@@ -46,7 +47,7 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="210sp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 >
                 <ImageView
@@ -124,6 +125,7 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/icontime"/>
                 <TextView
+                    android:id="@+id/timepass"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
@@ -151,6 +153,7 @@
                 android:fontFamily="@font/abril_fatface"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/compLayout"
             android:visibility="visible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -189,7 +192,7 @@
                     android:layout_marginTop="5sp"
                     android:layout_width="40sp"
                     android:layout_height="40sp"
-                    android:src="@drawable/admincartuchotitanico"/>
+                    android:src="@color/adSegundaria"/>
             </LinearLayout>
 
         </LinearLayout>

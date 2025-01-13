@@ -6,13 +6,13 @@ import android.view.View
 import android.view.WindowInsets
 import android.view.WindowInsetsController
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.R
 import com.example.myapp.databinding.ActivityVdOneBinding
+import com.jlds.deadlockguide.base.BaseActivity
 
-class ActivityVdOne : AppCompatActivity() {
+class ActivityVdOne : BaseActivity() {
     private lateinit var binding: ActivityVdOneBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/dialogpeq"
+    android:id="@+id/dialogad"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -24,6 +24,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="20sp"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/itemNome"
@@ -31,7 +32,7 @@
                     android:layout_height="wrap_content"
                     android:text="Nome do item"
                     android:fontFamily="@font/abril_fatface"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="25sp"
                     />
                 <TextView
@@ -40,20 +41,20 @@
                     android:layout_height="wrap_content"
                     android:text="Valor"
                     android:fontFamily="@font/abril_fatface"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="15sp"
                     />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="210sp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 >
                 <ImageView
                     android:id="@+id/itemImg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/apsurtodepoder"/>
+                    android:src="@drawable/apcatadordebalas"/>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -103,13 +104,13 @@
             <LinearLayout
                 android:layout_width="321sp"
                 android:layout_height="30sp"
-                android:background="@color/apMaisEscuro">
+                android:background="@color/apEscuro">
                 <TextView
                     android:id="@+id/time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10sp"
-                    android:text="Ativa"
+                    android:text="Passiva"
                     android:fontFamily="@font/abril_fatface"
                     android:textColor="@color/white"
                     android:textSize="20sp"/>
@@ -124,6 +125,7 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/icontime"/>
                 <TextView
+                    android:id="@+id/timepass"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
@@ -134,29 +136,65 @@
 
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/layoutPassiva"
+            android:visibility="visible"
+            android:background="@color/apMaisEscuro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/textPassiva"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/corGamePadrao"
+                android:text="text"
+                android:layout_margin="10sp"
+                android:textSize="15sp"
+                android:fontFamily="@font/abril_fatface"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/compLayout"
             android:visibility="visible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#633584"
-            android:orientation="vertical"
+            android:background="@color/apInfo"
+            android:orientation="horizontal"
             android:padding="10sp">
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Componente de:"
-                android:fontFamily="@font/abril_fatface"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                />
-            <TextView
-                android:id="@+id/componte"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/abril_fatface"
-                android:text="Detalhes"
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                />
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Componente de:"
+                    android:fontFamily="@font/abril_fatface"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:id="@+id/componte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="Detalhes"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20sp"
+                android:gravity="end">
+                <ImageView
+                    android:id="@+id/componenteimg"
+                    android:layout_marginTop="5sp"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:src="@drawable/compespiritoaprimorado"/>
+            </LinearLayout>
+
         </LinearLayout>
         <LinearLayout
             android:id="@+id/layoutInfos"

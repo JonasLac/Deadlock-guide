@@ -11,15 +11,15 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.R
 import com.example.myapp.databinding.ActivityBuildMainEspBinding
 import com.google.android.gms.ads.AdRequest
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.jlds.deadlockguide.base.BaseActivity
 
-class BuildMainEsp : AppCompatActivity() {
+class BuildMainEsp : BaseActivity() {
 
     private lateinit var binding: ActivityBuildMainEspBinding
 
@@ -128,8 +128,12 @@ class BuildMainEsp : AppCompatActivity() {
             detailsOneText: String,
             detailsTwoText: String,
             detailsThreeText: String,
+            compAtiva: Boolean,
             componentText: String,
             ativa: Boolean,
+            time: String,
+            textPass: String,
+            imgRes: Int,
             infoAtiva: Boolean
         ) {
             val dialogCostumizado = layoutInflater.inflate(R.layout.dialogpeq, null)
@@ -140,20 +144,31 @@ class BuildMainEsp : AppCompatActivity() {
             val detailsTwo = dialogCostumizado.findViewById<TextView>(R.id.detalhesTwo)
             val detailsThree = dialogCostumizado.findViewById<TextView>(R.id.detalhesThree)
             val component = dialogCostumizado.findViewById<TextView>(R.id.componte)
+            val imgComp = dialogCostumizado.findViewById<ImageView>(R.id.componenteimg)
             val ativaLayout = dialogCostumizado.findViewById<LinearLayout>(R.id.ativo)
+            val compLayout = dialogCostumizado.findViewById<LinearLayout>(R.id.compLayout)
+            val layoutPass = dialogCostumizado.findViewById<LinearLayout>(R.id.layoutPassiva)
+            val timepass = dialogCostumizado.findViewById<TextView>(R.id.timepass)
+            val textPassi = dialogCostumizado.findViewById<TextView>(R.id.textPassiva)
             val infoLayout = dialogCostumizado.findViewById<LinearLayout>(R.id.layoutInfos)
 
 
             imgItem.setImageResource(imageRes)
+            imgComp.setImageResource(imgRes)
             dialogTextView.text = text
             valor.text = valorText
             detailsOne.text = detailsOneText
             detailsTwo.text = detailsTwoText
             detailsThree.text = detailsThreeText
             component.text = componentText
+            timepass.text = time
+            textPassi.text = textPass
+
+
 
             if (ativa) {
                 ativaLayout.visibility = View.GONE
+                layoutPass.visibility = View.GONE
             } else {
                 ativaLayout.visibility = View.VISIBLE
             }
@@ -161,6 +176,11 @@ class BuildMainEsp : AppCompatActivity() {
                 infoLayout.visibility = View.GONE
             } else {
                 infoLayout.visibility = View.VISIBLE
+            }
+            if (compAtiva) {
+                compLayout.visibility = View.GONE
+            } else {
+                compLayout.visibility = View.VISIBLE
             }
 
             val mostraDialog = AlertDialog.Builder(this)
@@ -186,45 +206,38 @@ class BuildMainEsp : AppCompatActivity() {
         */
 
 
-        binding.catadorDeBalas.setOnClickListener {
+        binding.cargaAdicional.setOnClickListener {
 
             dialogSmall(
-                imageRes = R.drawable.dialogimgcatadordebalas,
+                imageRes = R.drawable.apcargaadicional,
+                text = "Carga adicional",
+                valorText = "500 Almas",
+                detailsOneText = "+1 Cargas de Capacidade de Bónus",
+                detailsTwoText = "+10% Redução de Recarga para Habilidades Cobradas",
+                detailsThreeText = "+6% Dano de Arma",
+                componentText = "Recarga Rapida",
+                compAtiva = false,
+                ativa = true,
+                time = "00",
+                textPass = "Na",
+                imgRes = R.drawable.comprecargarapida,
+                infoAtiva = true
+            )
+        }
+        binding.catadorDeBalas.setOnClickListener {
+            dialogSmall(
+                imageRes = R.drawable.apcatadordebalas,
                 text = "Catador de Balas",
                 valorText = "500 Almas",
-                detailsOneText = "15 munição",
-                detailsTwoText = "40 vida adicional",
-                detailsThreeText = "Sempre que garantir ou negar um orbe de almas, você recebe a munição de volta e ganha poder espiritual acumulável.\n" +
-                        "quando tiver o máximo de acumulo, ganha velocidade de corrida adicional\n",
+                detailsOneText = "+10% Munição",
+                detailsTwoText = "+40 Bónus Saúde",
+                detailsThreeText = "+2 Sprint e Max Sacks",
                 componentText = "catador",
+                compAtiva = true,
                 ativa = true,
-                infoAtiva = true
-            )
-        }
-        binding.cargaAdicional.setOnClickListener {
-            dialogSmall(
-                imageRes = R.drawable.apcargaadicional,
-                text = "Catador de Balas",
-                valorText = "500",
-                detailsOneText = "detalhes1",
-                detailsTwoText = "detalhes2",
-                detailsThreeText = "detalhes3",
-                componentText = "catador",
-                ativa = true,
-                infoAtiva = true
-
-            )
-        }
-        binding.cargaAdicional.setOnClickListener {
-            dialogSmall(
-                imageRes = R.drawable.apcargaadicional,
-                text = "Catador de Balas",
-                valorText = "500",
-                detailsOneText = "detalhes1",
-                detailsTwoText = "detalhes2",
-                detailsThreeText = "detalhes3",
-                componentText = "catador",
-                ativa = true,
+                time = "00",
+                textPass = "Na",
+                imgRes = R.drawable.admincartuchotitanico,
                 infoAtiva = true
 
             )
@@ -232,13 +245,17 @@ class BuildMainEsp : AppCompatActivity() {
         binding.espiritoAdicional.setOnClickListener {
             dialogSmall(
                 imageRes = R.drawable.apespiritoadicional,
-                text = "Catador de Balas",
-                valorText = "500",
-                detailsOneText = "detalhes1",
-                detailsTwoText = "detalhes2",
-                detailsThreeText = "detalhes3",
-                componentText = "catador",
+                text = "Espirito Adicional",
+                valorText = "500 Almas",
+                detailsOneText = "+10 Poder Espiritual",
+                detailsTwoText = "+1 Regen Saúde",
+                detailsThreeText = "+35 Bónus Saúde",
+                componentText = "Espirito Aprimorado",
+                compAtiva = false,
                 ativa = true,
+                time = "00",
+                textPass = "Na",
+                imgRes = R.drawable.compespiritoaprimorado,
                 infoAtiva = true
 
             )
@@ -246,13 +263,17 @@ class BuildMainEsp : AppCompatActivity() {
         binding.explosaoMistica.setOnClickListener {
             dialogSmall(
                 imageRes = R.drawable.apexplosaomistica,
-                text = "Catador de Balas",
-                valorText = "500",
-                detailsOneText = "detalhes1",
-                detailsTwoText = "detalhes2",
-                detailsThreeText = "detalhes3",
-                componentText = "catador",
+                text = "Explosão Mistica",
+                valorText = "500 Almas",
+                detailsOneText = "+40 Spirit Shield Saúde",
+                detailsTwoText = "+6% Dano de Arma",
+                detailsThreeText = "35 Dano de Bônus",
+                componentText = "Explosão aprimorada",
+                compAtiva = false,
                 ativa = true,
+                time = "00",
+                textPass = "Na",
+                imgRes = R.drawable.compexplosaoaprimorada,
                 infoAtiva = true
 
             )
@@ -260,13 +281,17 @@ class BuildMainEsp : AppCompatActivity() {
         binding.dominioMistico.setOnClickListener {
             dialogSmall(
                 imageRes = R.drawable.apdominiomistico,
-                text = "Catador de Balas",
-                valorText = "500",
-                detailsOneText = "detalhes1",
-                detailsTwoText = "detalhes2",
-                detailsThreeText = "detalhes3",
-                componentText = "catador",
+                text = "Dominio Mistico",
+                valorText = "500 Almas",
+                detailsOneText = "Aumenta o alcance e o raio de efeito de suas habilidades e itens.",
+                detailsTwoText = "+15% Faixa de Capacidade",
+                detailsThreeText = "+7% Resistência ao Espírito",
+                componentText = "Dominio Aprimorado",
+                compAtiva = false,
                 ativa = true,
+                time = "00",
+                textPass = "Na",
+                imgRes = R.drawable.compdominioaprimorado,
                 infoAtiva = true
 
             )
@@ -274,13 +299,17 @@ class BuildMainEsp : AppCompatActivity() {
         binding.golpeEspiritual.setOnClickListener {
             dialogSmall(
                 imageRes = R.drawable.apgolpeespiritual,
-                text = "Catador de Balas",
+                text = "Golpe Espiritual",
                 valorText = "500",
-                detailsOneText = "detalhes1",
-                detailsTwoText = "detalhes2",
-                detailsThreeText = "detalhes3",
-                componentText = "catador",
+                detailsOneText = "+12% Dano Corpo a Corpo",
+                detailsTwoText = "+80 Spirit Shield Saúde",
+                detailsThreeText = "50 Dano de Espírito",
+                componentText = "Na",
+                compAtiva = true,
                 ativa = true,
+                time = "",
+                textPass = "",
+                imgRes = R.drawable.admincartuchotitanico,
                 infoAtiva = true
 
             )
@@ -290,13 +319,16 @@ class BuildMainEsp : AppCompatActivity() {
                 imageRes = R.drawable.apinfusao,
                 text = "Catador de Balas",
                 valorText = "500",
-                detailsOneText = "detalhes1",
-                detailsTwoText = "detalhes2",
-                detailsThreeText = "detalhes3",
-                componentText = "catador",
+                detailsOneText = "+70 Escudo Espiritual",
+                detailsTwoText = "+16 Poder Espiritual",
+                detailsThreeText = "+20% Espírito Lifesteal",
+                componentText = "Cura Estelar",
+                compAtiva = true,
                 ativa = false,
+                time = "32s",
+                textPass = "Ganhe Poder Espiritual e Espírito Lifesteal.",
+                imgRes = R.drawable.admincartuchotitanico,
                 infoAtiva = true
-
             )
         }
 

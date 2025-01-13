@@ -12,8 +12,9 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.R
 import com.example.myapp.databinding.ActivityVindictaProfileBinding
 import com.google.android.gms.ads.AdRequest
+import com.jlds.deadlockguide.base.BaseActivity
 
-class VindictaProfile : AppCompatActivity() {
+class VindictaProfile : BaseActivity() {
 
     private lateinit var binding: ActivityVindictaProfileBinding
 

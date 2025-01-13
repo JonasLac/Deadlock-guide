@@ -1477,6 +1477,11 @@
 
                 </LinearLayout>
 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300sp"
+                    android:src="@drawable/fanartchico"/>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="100sp" />

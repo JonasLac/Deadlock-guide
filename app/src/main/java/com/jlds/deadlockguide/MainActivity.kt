@@ -12,7 +12,6 @@ import android.view.WindowInsetsController
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
@@ -25,10 +24,11 @@ import com.google.android.gms.ads.MobileAds
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.jlds.deadlockguide.base.BaseActivity
 import java.util.Locale
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private var interstitialAd: InterstitialAd? = null
@@ -109,34 +109,30 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
+            /*VERIFICA SE A BOMBA DO ANUNCIO FOI*/
             if (interstitialAd != null) {
                 interstitialAd?.show(this)
                 interstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
-                    override fun onAdDismissedFullScreenContent() {
-                        // Após o fechamento do anúncio, carregue outro
-                        loadInterstitialAd()
+                    override fun onAdDismissedFullScreenContent() { loadInterstitialAd()
                     }
 
                     override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
-                        // Carregue outro anúncio se a exibição falhar
                         loadInterstitialAd()
                     }
                 }
             } else {
-                // Caso o anúncio não esteja carregado, exiba uma mensagem ou carregue novamente
                 loadInterstitialAd()
             }
         }
 
 
-    // Método para carregar o anúncio intersticial
+    /*ANUNCIO PAE SE LIGA*/
     private fun loadInterstitialAd() {
         val adRequest = AdRequest.Builder().build()
 
         InterstitialAd.load(
             this,
-            "ca-app-pub-2104181702379477/5920588311", // Substitua pelo seu ID de anúncio
+            "ca-app-pub-2104181702379477/5920588311",
             adRequest,
             object : InterstitialAdLoadCallback() {
                 override fun onAdLoaded(ad: InterstitialAd) {
@@ -151,14 +147,17 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.layoutinfernos.setOnClickListener {
-            startActivity(Intent(this, infernosProfile::class.java))
-        }
+            val intent = Intent(this, infernosProfile::class.java)
+            startActivity(intent)
+            overridePendingTransition(R.anim.zoom_in, R.anim.zoom_out)        }
         binding.layoutadaga.setOnClickListener {
-            startActivity(Intent(this, AdagaProfile::class.java))
-        }
+            val intent = Intent(this, AdagaProfile::class.java)
+            startActivity(intent)
+            overridePendingTransition(R.anim.zoom_in, R.anim.slide_fade_out)        }
         binding.layoutbebop.setOnClickListener {
-            startActivity(Intent(this, BebopProfile::class.java))
-        }
+            val intent = Intent(this, BebopProfile::class.java)
+            startActivity(intent)
+            overridePendingTransition(R.anim.zoom_in, R.anim.slide_fade_out)           }
         binding.layoutbruma.setOnClickListener {
 
             startActivity(Intent(this, BrumaProlife::class.java))
@@ -324,7 +323,6 @@ class MainActivity : AppCompatActivity() {
         for (i in 0 until bottomNavigationView.menu.size()) {
             bottomNavigationView.menu.getItem(i).isChecked = false
         }
-
 
 
 

@@ -3,14 +3,14 @@ package com.jlds.deadlockguide
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.R
 import com.example.myapp.databinding.ActivityLadyProfileBinding
 import com.google.android.gms.ads.AdRequest
+import com.jlds.deadlockguide.base.BaseActivity
 
-class LadyProfile : AppCompatActivity() {
+class LadyProfile : BaseActivity() {
     private lateinit var binding: ActivityLadyProfileBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

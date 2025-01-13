@@ -7,14 +7,14 @@ import android.view.View
 import android.view.WindowInsets
 import android.view.WindowInsetsController
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.R
 import com.example.myapp.databinding.ActivityBuildAdOneBinding
+import com.jlds.deadlockguide.base.BaseActivity
 
 
-class BuildAdOne : AppCompatActivity() {
+class BuildAdOne : BaseActivity() {
 
     private lateinit var binding: ActivityBuildAdOneBinding
 

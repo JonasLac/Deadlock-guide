@@ -12,8 +12,9 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.R
 import com.example.myapp.databinding.ActivityChicoProfileBinding
 import com.google.android.gms.ads.AdRequest
+import com.jlds.deadlockguide.base.BaseActivity
 
-class ChicoProfile : AppCompatActivity() {
+class ChicoProfile : BaseActivity() {
 
     private lateinit var binding: ActivityChicoProfileBinding
 

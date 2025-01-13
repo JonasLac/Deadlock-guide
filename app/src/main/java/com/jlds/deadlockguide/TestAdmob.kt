@@ -2,15 +2,15 @@ package com.jlds.deadlockguide
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.R
 import com.example.myapp.databinding.ActivityTestAdmobBinding
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.MobileAds
+import com.jlds.deadlockguide.base.BaseActivity
 
-class TestAdmob : AppCompatActivity() {
+class TestAdmob : BaseActivity() {
     private lateinit var binding: ActivityTestAdmobBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -80,24 +80,28 @@
                     android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/botasdecorrida"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdbotascorrida" />
 
                     <ImageView
+                        android:id="@+id/espiritoresiliente"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdespiritoresilente" />
 
                     <ImageView
+                        android:id="@+id/punhosvampiricos"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdpunhosvampiricos" />
 
                     <ImageView
+                        android:id="@+id/vidaadicional"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -112,12 +116,14 @@
                     android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/vigoradicional"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@drawable/vdvigoradicional" />
 
                     <ImageView
+                        android:id="@+id/ritodecura"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"

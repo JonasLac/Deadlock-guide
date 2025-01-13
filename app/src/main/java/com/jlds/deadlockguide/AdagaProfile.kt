@@ -3,14 +3,14 @@ package com.jlds.deadlockguide
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.R
 import com.example.myapp.databinding.ActivityAdagaProfileBinding
 import com.google.android.gms.ads.AdRequest
+import com.jlds.deadlockguide.base.BaseActivity
 
-class AdagaProfile : AppCompatActivity() {
+class AdagaProfile : BaseActivity() {
     private lateinit var binding: ActivityAdagaProfileBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +24,7 @@ class AdagaProfile : AppCompatActivity() {
         }
         binding.iconlogoback.setOnClickListener {
             finish()
+            overridePendingTransition(R.anim.slide_fade_in, R.anim.slide_fade_out)
         }
         binding.skillq.setOnClickListener {
             binding.layoutskills.visibility = View.VISIBLE

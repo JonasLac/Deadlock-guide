@@ -6,13 +6,13 @@ import android.view.View
 import android.view.WindowInsets
 import android.view.WindowInsetsController
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp.R
 import com.example.myapp.databinding.ActivityAdForBinding
+import com.jlds.deadlockguide.base.BaseActivity
 
-class ActivityAdFor : AppCompatActivity() {
+class ActivityAdFor : BaseActivity() {
     private lateinit var binding: ActivityAdForBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
